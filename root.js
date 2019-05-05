@@ -2,5 +2,6 @@ var router = require("express").Router();
 const request = require('request');
 
 router.get("/",function(req,res){
-    res.render("index.ejs");
-})
+    res.render("index");
+});
+module.exports = router;
