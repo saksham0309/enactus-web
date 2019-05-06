@@ -150,14 +150,14 @@ button:focus {
 ============================================================================================ */
 .primary_btn {
   display: inline-block;
-  background: #60bc0f;
+  background:#FEC300;
   padding: 0px 50px;
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 48px;
-  border: 1px solid #60bc0f;
+  border: 1px solid #FEC300;
   border-radius: 0px;
   outline: none !important;
   box-shadow: none !important;
@@ -167,10 +167,10 @@ button:focus {
   transition: all 300ms linear 0s; }
   .primary_btn:hover {
     background: transparent;
-    color: #60bc0f; }
+    color: #FEC300; }
   .primary_btn.yellow_btn {
-    background: #fdbb00 !important;
-    border: 1px solid #fdbb00 !important;
+    background: #FEC300 !important;
+    border: 1px solid #FEC300 !important;
     color: #000000; }
     .primary_btn.yellow_btn:hover {
       background: transparent !important; }
@@ -204,7 +204,7 @@ button:focus {
         .header_area .navbar .nav .nav-item .nav-link:after {
           display: none; }
       .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
-        color: #60bc0f; }
+        color: #FEC300; }
       .header_area .navbar .nav .nav-item.submenu {
         position: relative; }
         .header_area .navbar .nav .nav-item.submenu ul {
