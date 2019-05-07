@@ -20,7 +20,7 @@
 	<% include frontpart/navbar %>
 
 	<!--================ Home Banner Area =================-->
-	<section class="home_banner_area">
+	<section class="home_banner_area"  data-slides='["/img/banner/ban1.jpg","/img/banner/ban2.jpg","/img/banner/ban3.jpg"]'>
 		<div class="banner_inner">
 			<div class="container">
 				<div class="banner_content">
@@ -122,7 +122,7 @@
 					<div class="card">
 						<div class="card-body">
 							<figure>
-								<img class="card-img-top img-fluid" src="img/features/fc1.jpg" alt="Card image cap">
+								<img height="100px"class="card-img-top img-fluid" src="img/causes/X/IMG-20190407-WA0015.jpg" alt="Card image cap">
 							</figure>
 							<div class="card_inner_body">
 								<h4 class="card-title">Project Ujjwal</h4>
@@ -149,9 +149,7 @@
 							</figure>
 							<div class="card_inner_body">
 								<h4 class="card-title">Project Malar</h4>
-								<p class="card-text">
-									Be tree their face won't appear day waters moved fourth in they're divide don't a you were man face god.
-								</p>
+								<p class="card-text">Primarily, the aim is to tackle the pollution caused by flowers at its roots and hence trying to minimise the water pollution caused indirectly due to this, and provides a livelihood mainly to female scavengers by employing them right from the collection of flowers to the manufacturing of the incense sticks. </p>
 								<div class="d-flex justify-content-between raised_goal">
 									<p>Raised: $1533</p>
 									<p><span>Goal: $2500</span></p>
@@ -172,9 +170,7 @@
 							</figure>
 							<div class="card_inner_body">
 								<h4 class="card-title">Project Naari</h4>
-								<p class="card-text">
-									Be tree their face won't appear day waters moved fourth in they're divide don't a you were man face god.
-								</p>
+								<p class="card-text">THE NEED FOR NAARI: Menstrual hygiene and management is a very elementary knowledge that people need to have. Living in the 21st century where the world is heading with technology and modernisation, the taboo on menstruation still prevails and there are people who are still have not explored on what is the basic hygiene required for a healthy living. </p>
 								<div class="d-flex justify-content-between raised_goal">
 									<p>Raised: $1533</p>
 									<p><span>Goal: $2500</span></p>
@@ -604,5 +600,28 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="/js/gmaps.min.js"></script>
 	<script src="/js/theme.js"></script>
+	<script>
+
+	(function($) {
+
+'use strict';
+
+var $slides = $('[data-slides]');
+var images = $slides.data('slides');
+var count = images.length;
+var slideshow = function() {
+	$slides
+		.css('background-image', 'url("' + images[Math.floor(Math.random() * count)] + '")')
+		.show(0, function() {
+			setTimeout(slideshow, 3000);
+		});
+
+};
+
+slideshow();
+
+}(jQuery));
+
+	</script>
 </body>
 </html>

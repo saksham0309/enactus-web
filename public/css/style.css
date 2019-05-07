@@ -274,12 +274,29 @@ button:focus {
 /*----------------------------------------------------*/
 /* Home Banner Area css
 ============================================================================================ */
+/*
 .home_banner_area {
   z-index: 1;
   min-height: 900px;
   display: flex;
   background: linear-gradient(rgba(3, 1, 10, 0.5), rgba(3, 1, 10, 0.5)), url(../img/banner/home-banner.jpg) no-repeat scroll center center;
-  background-size: cover; }
+  background-size: cover;
+
+}*/
+[data-slides] {
+  z-index: 1;
+ min-height: 700px;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ background: url(../img/banner/ban1.jpg) no-repeat scroll center center;
+ background-size: cover;
+ transition: background-image 1s linear;
+}
+
+
+
+
   .home_banner_area .banner_inner {
     width: 100%;
     display: flex; }
