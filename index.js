@@ -3,6 +3,7 @@ var rootRoute = require('./root');
 var galleryRoute = require('./gallery');
 var aboutRoute = require('./aboutus');
 var eventRoute = require('./event');
+var projectRoute = require('./project');
 const bodyParser = require("body-parser");
 var app = express();
 
@@ -19,6 +20,7 @@ app.use(rootRoute);
 app.use(galleryRoute);
 app.use(aboutRoute);
 app.use(eventRoute);
+app.use(projectRoute);
 
 app.listen(process.env.PORT || 3000, process.env.IP, function(){
 	console.log("Server is running");
