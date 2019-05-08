@@ -11,9 +11,6 @@ router.get("/projects",function(req,res){
     res.render("index");
 });
 
-router.get("/events",function(req,res){
-    res.render("index");
-});
 
 
 
