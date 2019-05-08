@@ -17,14 +17,14 @@ app.use(express.static(__dirname + "/public"));
 
 // Routes
 app.use(rootRoute);
-<<<<<<< HEAD
+
 app.use(galleryRoute);
 app.use(aboutRoute);
 app.use(eventRoute);
 app.use(projectRoute);
-=======
 
->>>>>>> 012699b5d6b5693f968530b8f1739f8a05fb550f
+
+
 
 app.listen(process.env.PORT || 3000, process.env.IP, function(){
 	console.log("Server is running");
