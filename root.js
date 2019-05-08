@@ -7,11 +7,4 @@ router.get("/",function(req,res){
 
 
 
-router.get("/projects",function(req,res){
-    res.render("index");
-});
-
-
-
-
 module.exports = router;
