@@ -585,6 +585,11 @@ button:focus {
   .event-details-area .condition-right li:nth-child(3)::before {
     content: "\f124"; }
 
+
+    .proj-heading{
+      font-size: 40px;
+      font-weight: 500;
+    }
 /* recent Events css End
 =========================================================================================== */
 /* Team Area css
