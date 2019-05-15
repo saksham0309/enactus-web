@@ -1,0 +1,147 @@
+			.rslides {
+			  position: relative;
+			  list-style: none;
+			  overflow: hidden;
+			  width: 100%;
+			  padding: 0;
+			  margin: 110px 10px;
+			  }
+
+			.rslides li {
+			  -webkit-backface-visibility: hidden;
+			  position: absolute;
+			  display: none;
+			  width: 100%;
+			  left: 0;
+			  top: 0;
+			  }
+
+			.rslides li:first-child {
+			  position: relative;
+			  display: block;
+			  float: left;
+			  }
+
+			.rslides img {
+			  display: block;
+			  height: auto;
+			  float: left;
+			  width: 100%;
+			  border: 0;
+			  }
+        	.notebook{
+        		padding: 0;
+			}
+			.notebook>img{
+				width: inherit;
+				border-radius: 20px;
+			}
+			.overlap{
+				z-index: 1;
+				position: absolute;
+				padding: 1.6% 15% 1% 5%;
+				width: auto;
+			}
+			.overlap p{
+				color: black;
+				font-size: x-large;
+			}
+			@media(min-width: 1200px)
+			{
+				.col-lg-6{
+					max-width: 50%;
+					float: left;
+					margin-bottom: 2%;
+				}
+			}
+			@media(min-width: 768px)
+			{
+				.col-md-6{
+					max-width: 50%;
+					float: left;
+					margin-bottom: 2%;
+				}
+			}
+			@media(min-width: 576px)
+			{
+				.col-sm-6{
+					max-width: 50%;
+					float: left;
+					margin-bottom: 2%;
+				}
+				.rslides{
+					display: none;
+				}
+			}
+			@media(max-width: 575px)
+			{.col-xs-12{
+				display: none;
+			}
+			}
+			@media (max-width: 768px){
+				.overlap>p{
+					font-size: larger;
+				}
+			}
+			@media (max-width: 360px){
+				.overlap>p{
+					font-size: medium;
+				}
+			}
+			.fontn{
+				font-family: Harrington
+			}
+		    .container2>li {
+		      margin-bottom: 20px;
+		    }
+		    
+		    .container2 {
+		      -webkit-box-sizing: border-box;
+		              box-sizing: border-box;
+		      display: block;
+		      background-color: transparent;
+		      list-style: none;
+		      padding: 0;
+		    }
+			/* Hide the radio button/checkbox */
+		    input[type=radio]{
+		        display: none;
+		    }
+
+		    /* Click to expand div (Bigger clickable area for radio buttons by adding label for="") */
+		    label{
+		      display: block;
+		      background-color: #fec3005e;
+		      cursor: pointer;
+		      -webkit-user-select: none;
+		      -moz-user-select: none;
+		      -ms-user-select: none;
+		      user-select: none;
+		      padding: 20px;
+		      border-radius: 20px;
+		      font-size: 24px;
+		      margin:0px 10px;
+		    }
+
+		    label:hover {
+		     	background-color: #FEC300;
+		    }
+
+		    /*  Hide the toggle content */
+		    .toggle-content{
+		      display: none;
+		    }
+
+		    /*  Show the toggle content by using the general sibling selector */
+		    input[type=radio]:checked ~ label{
+		        background-color: #FEC300;
+		        border-radius: 20px;
+		    }
+
+		    input[type=radio]:checked ~ .toggle-content{
+		        display: block;
+		        background-color: transparent;
+		        padding: 20px;
+		        border-bottom-left-radius: 4px;
+		        border-bottom-right-radius: 4px;
+		    }
