@@ -1,10 +1,7 @@
 # enactus-web
-Added Gallery.php
-public2 and
-frontpart changed
-all are in PHP.....
-For running Application:
-  ->Rename public2 as Soumi and put it in the public folder
-  ->Rename frontpart_changed as frontpart
-  ->Copy The contents To xampp/htdocs/"Any Folder Name"
+  Added gallery.ejs
+  Changed gallery.js -> "res.render("gallery")"
+  Added galstyle.css in css folder
+  Added gsamples folder with background and sample pictures used in my gallery template
+  All are in Node JS file type can be run through nodemon
   
