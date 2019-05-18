@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>About Us</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/vendors/linericon/style.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/vendors/lightbox/simpleLightbox.css" />
+    <link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+
+    <link rel="stylesheet" type="text/css" href="/semantic.min.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/semantic.min.js"></script>
+  </head>
+  <body>
+    <%include frontpart/navbar%>
+    <!--================ Home Banner Area =================-->
+    <section class="home_banner_area">
+      <div
+        class="banner_inner"
+        data-slides='["/img/banner/ban1.jpg","/img/banner/ban2.jpg","/img/banner/ban3.jpg"]'
+      >
+        <div class="container">
+          <div class="banner_content">
+            <p class="upper_text">Give a hand</p>
+            <h2>to make the better world</h2>
+            <p>
+              That don't lights. Blessed land spirit creature divide our made
+              two itself upon you'll dominion waters man second good you they're
+              divided upon winged were replenish night
+            </p>
+            <a class="primary_btn mr-20" href="#">Donate Now</a>
+            <a class="primary_btn yellow_btn text-white" href="#">See Causes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="ui hidden divider"></div>
+    <div class="ui container centered mt-4">
+      <div class="ui horizontal list mt-4">
+        <div class="item">
+          <img src="/images/members/Board.jpeg" class="ui tiny circular image">
+        <div class="content">
+          <div class="ui sub header">Board</div>
+          Project Manager
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui tiny circular image" src="/images/members/Creative.jpeg">
+        <div class="content">
+          <div class="ui sub header">Creative</div>
+          Coordinator
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui tiny circular image" src="/images/members/Finance.jpeg">
+        <div class="content">
+          <div class="ui sub header">Finance</div>
+          Developer
+        </div>
+      </div>
+      <div class="item">
+        <img src="/images/members/HR.jpeg" class="ui tiny circular image">
+        <div class="content">
+          <div class="ui sub header">HR</div>
+          Project Manager
+        </div>
+      </div>
+      <div class="item">
+        <img src="/images/members/Marketing.jpeg" class="ui tiny circular image">
+        <div class="content">
+          <div class="ui sub header">Marketing</div>
+          Project Manager
+        </div>
+      </div>
+    </div>
+    <h1 class="ui header center align">Our Team</h1>
+    <hr>
+  </div>
+
+  <!-- <div class="ui container mt-4" id="mobi">
+    <div class="ui compact menu">
+      <div class="ui simple dropdown item">
+        Departments
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" id = "adv">Advisory Board</a>
+          <a class="item" id = "fin">Finance</a>
+          <a class="item" id = "mns">Marketing and Sponsorship</a>
+          <a class="item" id = "hr">Human Resource</a>
+          <a class="item" id = "cre">Creative</a>
+        </div>
+      </div>
+    </div>
+    </div> -->
+    <div class="ui container mt-4" >
+      <div class="ui top attached tabular menu stacked" id="pc">
+        <a class="item" id="adv" >
+          Advisory Board
+        </a>
+        <a class="item" id="fin">
+          Finance
+        </a>
+        <a class="item" id="mns">
+          Marketing and Sponsorship
+        </a>
+        <a class="item" id="hr">
+          Human Resource
+        </a>
+        <a class="item" id="cre">
+          Creative
+        </a>
+      </div>
+      <!-- Advisor Board Members -->
+      <div class="ui bottom attached segment" id="advMem">
+        <div class="ui link cards centered">
+                <% for(var i=0; i<advMembers.length; i++) {%>
+            <div class="card" >
+            <div class="image">
+              <img src="/images/members/<%=advMembers[i].photo%>" />
+            </div>
+            <div class="content">
+              <div class="header"><%=advMembers[i].name%></div>
+              <div class="meta">
+                <a><%=advMembers[i].desg%></a>
+              </div>
+              <div class="description">
+                    <%=advMembers[i].desc%>
+              </div>
+            </div>
+            <div class="extra content">
+              <span class="right floated">
+                Joined in 2013
+              </span>
+              <span>
+                <i class="user icon"></i>
+                75 Friends
+              </span>
+            </div>
+          </div>
+          <%}%>
+        </div>
+      </div>
+
+      <!-- Finance Members -->
+      <div class="ui bottom attached segment" id="finMem">
+        <div class="ui link cards centered">
+                <% for(var i=0; i<finMembers.length; i++) {%>
+            <div class="card" >
+            <div class="image">
+              <img src="/images/members/<%=finMembers[i].photo%>" />
+            </div>
+            <div class="content">
+              <div class="header"><%=finMembers[i].name%></div>
+              <div class="meta">
+                <a><%=finMembers[i].desg%></a>
+              </div>
+              <div class="description">
+                    <%=finMembers[i].desc%>
+              </div>
+            </div>
+            <div class="extra content">
+              <span class="right floated">
+                Joined in 2013
+              </span>
+              <span>
+                <i class="user icon"></i>
+                75 Friends
+              </span>
+            </div>
+              </div>
+              <%}%>
+            </div>
+          </div>
+
+      <!-- MNS members -->
+      <div class="ui bottom attached segment" id="mnsMem">
+        <div class="ui link cards centered">
+            <% for(var i=0; i<mnsMembers.length; i++) {%>
+        <div class="card" >
+        <div class="image">
+          <img src="/images/members/<%=mnsMembers[i].photo%>" />
+        </div>
+        <div class="content">
+          <div class="header"><%=mnsMembers[i].name%></div>
+          <div class="meta">
+            <a><%=mnsMembers[i].desg%></a>
+          </div>
+          <div class="description">
+                <%=mnsMembers[i].desc%>
+          </div>
+        </div>
+        <div class="extra content">
+          <span class="right floated">
+            Joined in 2013
+          </span>
+          <span>
+            <i class="user icon"></i>
+            75 Friends
+          </span>
+        </div>
+          </div>
+          <%}%>
+        </div>
+      </div>
+
+      <!-- HR members -->
+      <div class="ui bottom attached segment" id="hrMem">
+        <div class="ui link cards centered">
+            <% for(var i=0; i<hrMembers.length; i++) {%>
+        <div class="card" >
+        <div class="image">
+          <img src="/images/members/<%=hrMembers[i].photo%>" />
+        </div>
+        <div class="content">
+          <div class="header"><%=hrMembers[i].name%></div>
+          <div class="meta">
+            <a><%=hrMembers[i].desg%></a>
+          </div>
+          <div class="description">
+                <%=hrMembers[i].desc%>
+          </div>
+        </div>
+        <div class="extra content">
+          <span class="right floated">
+            Joined in 2013
+          </span>
+          <span>
+            <i class="user icon"></i>
+            75 Friends
+          </span>
+        </div>
+          </div>
+          <%}%>
+        </div>
+      </div>
+
+      <!-- Creative Members -->
+      <div class="ui bottom attached segment" id="creMem">
+        <div class="ui link cards centered">
+            <% for(var i=0; i<creMembers.length; i++) {%>
+        <div class="card" >
+        <div class="image">
+          <img src="/images/members/<%=creMembers[i].photo%>" />
+        </div>
+        <div class="content">
+          <div class="header"><%=creMembers[i].name%></div>
+          <div class="meta">
+            <a><%=creMembers[i].desg%></a>
+          </div>
+          <div class="description">
+                <%=creMembers[i].desc%>
+          </div>
+        </div>
+        <div class="extra content">
+          <span class="right floated">
+            Joined in 2013
+          </span>
+          <span>
+            <i class="user icon"></i>
+            75 Friends
+          </span>
+        </div>
+          </div>
+          <%}%>
+        </div>
+      </div>
+
+    </div>
+
+    <%include frontpart/footer%>
+
+    <script>
+
+      if($(window).width() < 767)
+      {
+        $("#mobi").show();
+        $("#pc").hide();
+      } else {
+        $("#pc").show();
+        $("#mobi").hide();
+      }
+
+      $(document).ready(function() {
+        $("#adv").toggleClass("active");
+        $("#advMem").show();
+        $("#finMem").hide();
+        $("#mnsMem").hide();
+        $("#creMem").hide();
+        $("#hrMem").hide();
+      });
+      $("#adv").on("click", function() {
+        $("#adv").addClass("active");
+        $("#mns").removeClass("active");
+        $("#fin").removeClass("active");
+        $("#cre").removeClass("active");
+        $("#hr").removeClass("active");
+        $("#advMem").show();
+        $("#finMem").hide();
+        $("#mnsMem").hide();
+        $("#creMem").hide();
+        $("#hrMem").hide();
+      });
+      $("#fin").on("click", function() {
+        $("#fin").addClass("active");
+        $("#mns").removeClass("active");
+        $("#adv").removeClass("active");
+        $("#cre").removeClass("active");
+        $("#hr").removeClass("active");
+        $("#finMem").show();
+        $("#advMem").hide();
+        $("#mnsMem").hide();
+        $("#creMem").hide();
+        $("#hrMem").hide();
+      });
+      $("#mns").on("click", function() {
+        $("#mns").addClass("active");
+        $("#adv").removeClass("active");
+        $("#fin").removeClass("active");
+        $("#cre").removeClass("active");
+        $("#hr").removeClass("active");
+        $("#mnsMem").show();
+        $("#finMem").hide();
+        $("#advMem").hide();
+        $("#creMem").hide();
+        $("#hrMem").hide();
+      });
+      $("#hr").on("click", function() {
+        $("#hr").addClass("active");
+        $("#mns").removeClass("active");
+        $("#fin").removeClass("active");
+        $("#cre").removeClass("active");
+        $("#adv").removeClass("active");
+        $("#hrMem").show();
+        $("#finMem").hide();
+        $("#advMem").hide();
+        $("#mnsMem").hide();
+        $("#creMem").hide();
+      });
+      $("#cre").on("click", function() {
+        $("#mns").removeClass("active");
+        $("#cre").addClass("active");
+        $("#fin").removeClass("active");
+        $("#adv").removeClass("active");
+        $("#hr").removeClass("active");
+        $("#creMem").show();
+        $("#finMem").hide();
+        $("#advMem").hide();
+        $("#mnsMem").hide();
+        $("#hrMem").hide();
+      });
+    </script>
+  </body>
+</html>
