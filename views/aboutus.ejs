@@ -66,6 +66,7 @@
           Creative
         </a>
       </div>
+      <!-- Advisor Board Members -->
       <div class="ui bottom attached segment" id="advMem">
         <div class="ui link cards">
                 <% for(var i=0; i<advMembers.length; i++) {%>
@@ -95,6 +96,131 @@
           <%}%>
         </div>
       </div>
+
+      <!-- Finance Members -->
+      <div class="ui bottom attached segment" id="finMem">
+        <div class="ui link cards">
+                <% for(var i=0; i<finMembers.length; i++) {%>
+            <div class="card" >
+            <div class="image">
+              <img src="/images/members/<%=finMembers[i].photo%>" />
+            </div>
+            <div class="content">
+              <div class="header"><%=finMembers[i].name%></div>
+              <div class="meta">
+                <a><%=finMembers[i].desg%></a>
+              </div>
+              <div class="description">
+                    <%=finMembers[i].desc%>
+              </div>
+            </div>
+            <div class="extra content">
+              <span class="right floated">
+                Joined in 2013
+              </span>
+              <span>
+                <i class="user icon"></i>
+                75 Friends
+              </span>
+            </div>
+              </div>
+              <%}%>
+            </div>
+          </div>
+      
+      <!-- MNS members -->
+      <div class="ui bottom attached segment" id="mnsMem">
+        <div class="ui link cards">
+            <% for(var i=0; i<mnsMembers.length; i++) {%>
+        <div class="card" >
+        <div class="image">
+          <img src="/images/members/<%=mnsMembers[i].photo%>" />
+        </div>
+        <div class="content">
+          <div class="header"><%=mnsMembers[i].name%></div>
+          <div class="meta">
+            <a><%=mnsMembers[i].desg%></a>
+          </div>
+          <div class="description">
+                <%=mnsMembers[i].desc%>
+          </div>
+        </div>
+        <div class="extra content">
+          <span class="right floated">
+            Joined in 2013
+          </span>
+          <span>
+            <i class="user icon"></i>
+            75 Friends
+          </span>
+        </div>
+          </div>
+          <%}%>
+        </div>
+      </div>
+
+      <!-- HR members -->
+      <div class="ui bottom attached segment" id="hrMem">
+        <div class="ui link cards">
+            <% for(var i=0; i<hrMembers.length; i++) {%>
+        <div class="card" >
+        <div class="image">
+          <img src="/images/members/<%=hrMembers[i].photo%>" />
+        </div>
+        <div class="content">
+          <div class="header"><%=hrMembers[i].name%></div>
+          <div class="meta">
+            <a><%=hrMembers[i].desg%></a>
+          </div>
+          <div class="description">
+                <%=hrMembers[i].desc%>
+          </div>
+        </div>
+        <div class="extra content">
+          <span class="right floated">
+            Joined in 2013
+          </span>
+          <span>
+            <i class="user icon"></i>
+            75 Friends
+          </span>
+        </div>
+          </div>
+          <%}%>
+        </div>
+      </div>
+
+      <!-- Creative Members -->
+      <div class="ui bottom attached segment" id="creMem">
+        <div class="ui link cards">
+            <% for(var i=0; i<creMembers.length; i++) {%>
+        <div class="card" >
+        <div class="image">
+          <img src="/images/members/<%=creMembers[i].photo%>" />
+        </div>
+        <div class="content">
+          <div class="header"><%=creMembers[i].name%></div>
+          <div class="meta">
+            <a><%=creMembers[i].desg%></a>
+          </div>
+          <div class="description">
+                <%=creMembers[i].desc%>
+          </div>
+        </div>
+        <div class="extra content">
+          <span class="right floated">
+            Joined in 2013
+          </span>
+          <span>
+            <i class="user icon"></i>
+            75 Friends
+          </span>
+        </div>
+          </div>
+          <%}%>
+        </div>
+      </div>
+
     </div>
     <div class="ui hidden divider"></div>
     <%include frontpart/footer%>
@@ -103,6 +229,11 @@
         var member = [];
       $(document).ready(function() {
         $("#adv").toggleClass("active");
+        $("#advMem").show();
+        $("#finMem").hide();
+        $("#mnsMem").hide();
+        $("#creMem").hide();
+        $("#hrMem").hide();
       });
       $("#adv").on("click", function() {
         $("#adv").addClass("active");
@@ -110,9 +241,11 @@
         $("#fin").removeClass("active");
         $("#cre").removeClass("active");
         $("#hr").removeClass("active");
-        $.get("/about/adv", function(data, status) {
-            member = JSON.parse(data);
-        });
+        $("#advMem").show();
+        $("#finMem").hide();
+        $("#mnsMem").hide();
+        $("#creMem").hide();
+        $("#hrMem").hide();
       });
       $("#fin").on("click", function() {
         $("#fin").addClass("active");
@@ -120,10 +253,11 @@
         $("#adv").removeClass("active");
         $("#cre").removeClass("active");
         $("#hr").removeClass("active");
+        $("#finMem").show();
         $("#advMem").hide();
-        $.get("/about/fin", function(data, status) {
-            member = JSON.parse(data);
-        });
+        $("#mnsMem").hide();
+        $("#creMem").hide();
+        $("#hrMem").hide();
       });
       $("#mns").on("click", function() {
         $("#mns").addClass("active");
@@ -131,6 +265,11 @@
         $("#fin").removeClass("active");
         $("#cre").removeClass("active");
         $("#hr").removeClass("active");
+        $("#mnsMem").show();
+        $("#finMem").hide();
+        $("#advMem").hide();
+        $("#creMem").hide();
+        $("#hrMem").hide();
       });
       $("#hr").on("click", function() {
         $("#hr").addClass("active");
@@ -138,6 +277,11 @@
         $("#fin").removeClass("active");
         $("#cre").removeClass("active");
         $("#adv").removeClass("active");
+        $("#hrMem").show();
+        $("#finMem").hide();
+        $("#advMem").hide();
+        $("#mnsMem").hide();
+        $("#creMem").hide();
       });
       $("#cre").on("click", function() {
         $("#mns").removeClass("active");
@@ -145,6 +289,11 @@
         $("#fin").removeClass("active");
         $("#adv").removeClass("active");
         $("#hr").removeClass("active");
+        $("#creMem").show();
+        $("#finMem").hide();
+        $("#advMem").hide();
+        $("#mnsMem").hide();
+        $("#hrMem").hide();
       });
     </script>
   </body>
