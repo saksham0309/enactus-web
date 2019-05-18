@@ -1,10 +1,6 @@
 var router = require("express").Router();
 const request = require('request');
 
-<<<<<<< HEAD
-router.get("/about",function(req,res){
-    res.render("about");
-=======
 var advMembers = [{
     name: "Dr. Radha R",
     desg: "Faculty Coordinator",
@@ -204,7 +200,6 @@ var mnsMembers = [{
 
 router.get("/about", function (req, res) {
     res.render("aboutus",{advMembers:advMembers,finMembers:finMembers, mnsMembers:mnsMembers, hrMembers:hrMembers, creMembers: creMembers});
->>>>>>> origin/master
 });
 
 router.get("/about/adv",function(req,res){

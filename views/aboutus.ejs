@@ -7,6 +7,7 @@
     <title>About Us</title>
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="/css/bootstrap.css" />
     <link rel="stylesheet" href="/vendors/linericon/style.css" />
     <link rel="stylesheet" href="/css/font-awesome.min.css" />
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css" />
     <!-- main css -->
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/card.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
 
     <link rel="stylesheet" type="text/css" href="/semantic.min.css" />
@@ -47,6 +49,49 @@
         </div>
       </div>
     </section>
+
+<!---aboutus text-->
+<div style="height:200px"></div>
+<!--================ Start About Us Area =================-->
+<section class="about_area section_gap_bottom">
+		<div class="container">
+			<div class="row">
+				<div class="single_about row">
+					<div class="col-lg-6 col-md-12 text-center about_left">
+						<div class="about_thumb">
+							<img src="img/about-img.jpg" class="img-fluid" alt="">
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12 about_right">
+						<div class="about_content">
+							<h2>
+								WHO WE <br>
+									ARE
+							</h2>
+							<p><font color="yellow">Enactus VIT Chennai </font>is a student chapter of Enactus in <font color="orange">  VIT University, Chennai Campus</font>. We, as members of Enactus VIT Chennai, remain committed to the cause of improving the current societal conditions and providing sustainable lifestyles to the downtrodden and poor. We began as a small team of just 10 members in August 2015. Since then, the team has grown to become a strong group of motivated individuals working towards the goal of Sustainable development. It has taken up 3 community outreach projects till date. Project Ujjwal is currently running.</p>
+							<p>Read more about our on-going projects <a href="/projects">here</a>.
+                            </p>
+                            <p>With valuable guidance from our Business Advisory Board, partner organisations and advisors, we strive to use entrepreneurial action to positively impact all members of society, living our values of passion, innovation, integrity and collaboration in all that we do.
+
+                            </p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
     <div class="ui hidden divider"></div>
     <div class="ui container centered mt-4">
       <div class="ui horizontal list mt-4">
@@ -127,7 +172,7 @@
       <div class="ui bottom attached segment" id="advMem">
         <div class="ui link cards centered">
                 <% for(var i=0; i<advMembers.length; i++) {%>
-            <div class="card" >
+            <div class="card mySlides1 fade-in" >
             <div class="image">
               <img src="/images/members/<%=advMembers[i].photo%>" />
             </div>
@@ -151,6 +196,8 @@
             </div>
           </div>
           <%}%>
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
         </div>
       </div>
 
@@ -158,7 +205,8 @@
       <div class="ui bottom attached segment" id="finMem">
         <div class="ui link cards centered">
                 <% for(var i=0; i<finMembers.length; i++) {%>
-            <div class="card" >
+
+            <div class="card mySlides2 fade-in" >
             <div class="image">
               <img src="/images/members/<%=finMembers[i].photo%>" />
             </div>
@@ -181,7 +229,12 @@
               </span>
             </div>
               </div>
+
+
+
               <%}%>
+              <button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
             </div>
           </div>
 
@@ -189,7 +242,7 @@
       <div class="ui bottom attached segment" id="mnsMem">
         <div class="ui link cards centered">
             <% for(var i=0; i<mnsMembers.length; i++) {%>
-        <div class="card" >
+        <div class="card mySlides3 fade-in" >
         <div class="image">
           <img src="/images/members/<%=mnsMembers[i].photo%>" />
         </div>
@@ -213,6 +266,8 @@
         </div>
           </div>
           <%}%>
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs3(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs3(1)">&#10095;</button>
         </div>
       </div>
 
@@ -220,7 +275,7 @@
       <div class="ui bottom attached segment" id="hrMem">
         <div class="ui link cards centered">
             <% for(var i=0; i<hrMembers.length; i++) {%>
-        <div class="card" >
+        <div class="card mySlides4 fade-in" >
         <div class="image">
           <img src="/images/members/<%=hrMembers[i].photo%>" />
         </div>
@@ -244,6 +299,8 @@
         </div>
           </div>
           <%}%>
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs4(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs4(1)">&#10095;</button>
         </div>
       </div>
 
@@ -251,7 +308,7 @@
       <div class="ui bottom attached segment" id="creMem">
         <div class="ui link cards centered">
             <% for(var i=0; i<creMembers.length; i++) {%>
-        <div class="card" >
+        <div class="card mySlides5 fade-in" >
         <div class="image">
           <img src="/images/members/<%=creMembers[i].photo%>" />
         </div>
@@ -275,11 +332,13 @@
         </div>
           </div>
           <%}%>
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs5(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs5(1)">&#10095;</button>
         </div>
       </div>
 
     </div>
-
+    <div style="height:100px"></div>
     <%include frontpart/footer%>
 
     <script>
@@ -361,6 +420,8 @@
         $("#mnsMem").hide();
         $("#hrMem").hide();
       });
+
     </script>
+     <script src="/js/cardslide.js"></script>
   </body>
 </html>
