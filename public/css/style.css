@@ -283,16 +283,16 @@ button:focus {
   background-size: cover;
 
 }*/
-[data-slides] {
+[data-slides]  {
   z-index: 1;
  min-height: 700px;
  display: -webkit-box;
  display: -ms-flexbox;
  display: flex;
- background: url(../img/banner/ban1.jpg) no-repeat scroll center center;
+ background: url(../img/banner/ban11.jpg) no-repeat scroll center center;
  background-size: cover;
  transition: background-image 1s ease-in;
- filter: blur(25px);
+
 }
 
 
@@ -302,7 +302,8 @@ button:focus {
   .home_banner_area .banner_inner {
     width: 100%;
     height: 100vh;
-    display: flex; }
+    display: flex;
+     }
     .home_banner_area .banner_inner .container {
       vertical-align: middle;
       align-self: center; 
