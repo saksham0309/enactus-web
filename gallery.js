@@ -67,6 +67,6 @@ var projects=[
     }];
 
 router.get("/gallery",function(req,res){
-    res.render("gallery", {projects: projects});
+    res.render("gallery", {projects: projects,l:4});
 });
 module.exports = router;

@@ -25,13 +25,13 @@ desc4:'But in spite of the warnings and mishaps that happen, people still choose
 ];
 router.get("/events/:id",function(req,res){
     res.render("event_detail",{
-d:event[req.params.id]
+d:event[req.params.id],l:3
 
 
     });
 });
 router.get("/events",function(req,res){
-    res.render("event");
+    res.render("event",{l:3});
 });
 
 module.exports = router;
