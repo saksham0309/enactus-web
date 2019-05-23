@@ -14,19 +14,20 @@
         <link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css">
         <!-- main css -->
         <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href="/css/responsive.css">
+		<link rel="stylesheet" href="/css/responsive.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
 <body>
 	<% include frontpart/navbar %>
 
 	<!--================ Home Banner Area =================-->
 	<section class="home_banner_area" >
-		<div class="banner_inner"  data-slides='["/img/banner/ban1.jpg","/img/banner/ban2.jpg","/img/banner/ban3.jpg"]'>
+		<div class="banner_inner"  data-slides='["/img/banner/ban11.jpg","/img/banner/ban12.jpg","/img/banner/ban13.jpg"]'>
 			<div class="container" >
 				<div class="banner_content">
-					<p class="upper_text">Give a hand</p>
-					<h2>to make the better world</h2>
-					<p>
+					<p class="upper_text disableBlur"">Give a hand</p>
+					<h2 class="disableBlur">to make the better world</h2>
+					<p class="disableBlur">
 						That don't lights. Blessed land spirit creature divide our made two
 						itself upon you'll dominion waters man second good you they're divided upon winged were replenish night
 					</p>
@@ -79,7 +80,7 @@
 	<!--================ End Causes Area =================-->
 <div style="height:200px"></div>
 	<!--================ Start About Us Area =================-->
-	<section class="about_area section_gap_bottom">
+	<section class="about_area section_gap_bottom" data-aos="fade-right">
 		<div class="container">
 			<div class="row">
 				<div class="single_about row">
@@ -118,7 +119,7 @@
 			</div>
 
 			<div class="row">
-				<div class="col-lg-4 col-md-6">
+				<div class="col-lg-4 col-md-6" data-aos="flip-up">
 					<div class="card">
 						<div class="card-body">
 							<figure>
@@ -141,7 +142,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6">
+				<div class="col-lg-4 col-md-6" data-aos="flip-down">
 					<div class="card">
 						<div class="card-body">
 							<figure>
@@ -162,7 +163,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6">
+				<div class="col-lg-4 col-md-6" data-aos="zoom-in">
 					<div class="card">
 						<div class="card-body">
 							<figure>
@@ -189,7 +190,7 @@
 	<!--================ End Features Cause section =================-->
 
 	<!--================ Start Recent Event Area =================-->
-	<section class="event_area section_gap_custom">
+	<section class="event_area section_gap_custom" data-aos="zoom-in-up">
 		<div class="container">
 			<div class="main_title">
 				<h2>Upcoming events</h2>
@@ -600,6 +601,10 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="/js/gmaps.min.js"></script>
 	<script src="/js/theme.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	  </script>
 	<script>
 
 	(function($) {
