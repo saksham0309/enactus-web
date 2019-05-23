@@ -16,7 +16,7 @@
     <!-- main css -->
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
-    <link rel="stylesheet" href="/css/gallery.css" />
+    <!-- <link rel="stylesheet" href="/css/gallery.css" /> -->
 
     <link rel="stylesheet" type="text/css" href="/semantic.min.css" />
     <script
@@ -53,20 +53,18 @@
     </section>
     <div class="main_title">
       <h2>Gallery</h2>
-      <p>
-        A glimpse into who we are and what we do to change the world around us
-      </p>
+      <p>A glimpse into who we are and what we do to change the world around</p>
     </div>
     <div class="ui container gallery-head">
-      <div class="ui segment card-box">
+      <div class="ui segment">
         <div class="ui special cards centered">
-                <% for(var i=0; i<projects.length; i++) {%>
-            <div class=" card">
+            <%for(var i =0; i<projects.length; i++){%>
+          <div class=" card">
             <div class="blurring dimmable image">
               <div class="ui inverted dimmer">
                 <div class="content">
                   <div class="center">
-                    <button class="ui primary button" id="<%=projects[i].id%>">
+                    <button class="ui primary button" id="modalButton<%=i+1%>">
                       View
                     </button>
                   </div>
@@ -77,114 +75,46 @@
             <div class="content">
               <a class="header"><%=projects[i].name%></a>
               <div class="meta">
-                <span class="date"><%=projects[i].start%></span>
+                <span class="date">Created in <%=projects[i].start%></span>
               </div>
             </div>
             <div class="extra content">
               <a>
                 <i class="users icon"></i>
-                <%=projects[i].members%>
+                <%=projects[i].members%> Members
               </a>
             </div>
           </div>
-          <%}%>
+        <%}%>
         </div>
       </div>
-      <div class="ui modal" id="malar">
+      <%for(var i =0; i<projects.length; i++){%>
+      <div class="ui modal <%=projects[i].id%>">
         <div class="ui header">
           <h4 class="ui left floated header">
-            <i class="photo icon"></i>
-            <div class="content">
-              Image Gallery
-              <div class="sub header">Select your images</div>
+            <i class="fa fa-camera"> </i>
+            <div class="scrolling content">
+               <%=projects[i].name%>
+              <div class="sub header"><%=projects[i].start%></div>
             </div>
           </h4>
-          <h4 class="ui right floated header">
-            <i class="close icon right floated"></i>
-          </h4>
         </div>
-
-        <div id="masonryGrid">
-          <div class="grid-item">
-            <div class="hovereffect">
-              <img src="https://placeimg.com/250/200/any" />
-              <div class="overlay">
-                <h2>Image Title</h2>
-                <a class="info" href="#">Select</a>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="hovereffect">
-              <img src="https://placeimg.com/250/300/any" />
-              <div class="overlay">
-                <h2>Image Title</h2>
-                <a class="info" href="#">Select</a>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="hovereffect">
-              <img src="https://placeimg.com/250/150/any" />
-              <div class="overlay">
-                <h2>Image Title</h2>
-                <a class="info" href="#">Select</a>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="hovereffect">
-              <img src="https://placeimg.com/250/220/any" />
-              <div class="overlay">
-                <h2>Image Title</h2>
-                <a class="info" href="#">Select</a>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="hovereffect">
-              <img src="https://placeimg.com/200/150/any" />
-              <div class="overlay">
-                <h2>Image Title</h2>
-                <a class="info" href="#">Select</a>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="hovereffect">
-              <img src="https://placeimg.com/230/200/any" />
-              <div class="overlay">
-                <h2>Image Title</h2>
-                <a class="info" href="#">Select</a>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="hovereffect">
-              <img src="https://placeimg.com/240/245/any" />
-              <div class="overlay">
-                <h2>Image Title</h2>
-                <a class="info" href="#">Select</a>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="hovereffect">
-              <img src="https://placeimg.com/240/240/any" />
-              <div class="overlay">
-                <h2>Image Title</h2>
-                <a class="info" href="#">Select</a>
-              </div>
-            </div>
-          </div>
+        <div class="scrolling image content">
+        <div class="ui four cards mt-4">
+        <%for(var j =0; j<projects[i].num; j++){%>
+            <a class="red card">
+                <div class="large image">
+                <img src="<%=projects[i].path%>/<%=j+1%>.jpg">
+                </div>
+            </a>
+        <%}%>
         </div>
+    </div>
         <div class="actions">
           <div class="ui black deny button">Close</div>
-          <div class="ui teal right labeled icon button">
-            Save<i class="checkmark icon"></i>
-          </div>
         </div>
       </div>
+      <%}%>
     </div>
 
     <!-- <script src="/js/jquery-3.2.1.min.js"></script> -->
@@ -202,20 +132,9 @@
         on: "hover"
       });
       $(document).ready(function() {
-        <% for(var i=0; i<projects.length; i++) {%>
-        $("#<%=projects[i].id%>").click(function() {
-          $("#malar").modal("show");
-          // init Masonry
-          var $grid = $("#masonryGrid").masonry({
-            // options...
-            itemSelector: ".grid-item",
-            isFitWidth: true,
-            columnWidth: 1
-          });
-          // layout Masonry after each image loads
-          $grid.imagesLoaded().progress(function() {
-            $grid.masonry("layout");
-          });
+        <%for(var i =0; i<projects.length; i++){%>
+        $("#modalButton<%=i+1%>").click(function() {
+          $(".<%=projects[i].id%>").modal("show");
         });
         <%}%>
       });
