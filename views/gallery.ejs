@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>About Us</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/vendors/linericon/style.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/vendors/lightbox/simpleLightbox.css" />
+    <link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <!-- <link rel="stylesheet" href="/css/gallery.css" /> -->
+
+    <link rel="stylesheet" type="text/css" href="/semantic.min.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/semantic.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  </head>
+  <body>
+    <%include frontpart/navbar%>
+
+    <section class="home_banner_area">
+      <div
+        class="banner_inner"
+        data-slides='["/img/banner/ban1.jpg","/img/banner/ban2.jpg","/img/banner/ban3.jpg"]'
+      >
+        <div class="container">
+          <div class="banner_content">
+            <p class="upper_text">Give a hand</p>
+            <h2>to make the better world</h2>
+            <p>
+              That don't lights. Blessed land spirit creature divide our made
+              two itself upon you'll dominion waters man second good you they're
+              divided upon winged were replenish night
+            </p>
+            <a class="primary_btn mr-20" href="#">Donate Now</a>
+            <a class="primary_btn yellow_btn text-white" href="#">See Causes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="main_title">
+      <h2>Gallery</h2>
+      <p>A glimpse into who we are and what we do to change the world around</p>
+    </div>
+    <div class="ui container gallery-head">
+      <div class="ui segment">
+        <div class="ui special cards centered">
+            <%for(var i =0; i<projects.length; i++){%>
+          <div class=" card">
+            <div class="blurring dimmable image">
+              <div class="ui inverted dimmer">
+                <div class="content">
+                  <div class="center">
+                    <button class="ui primary button" id="modalButton<%=i+1%>">
+                      View
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <img src="<%=projects[i].path%>/<%=projects[i].cover%>.jpg" />
+            </div>
+            <div class="content">
+              <a class="header"><%=projects[i].name%></a>
+              <div class="meta">
+                <span class="date">Created in <%=projects[i].start%></span>
+              </div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="users icon"></i>
+                <%=projects[i].members%> Members
+              </a>
+            </div>
+          </div>
+        <%}%>
+        </div>
+      </div>
+      <%for(var i =0; i<projects.length; i++){%>
+      <div class="ui modal <%=projects[i].id%>">
+        <div class="ui header">
+          <h4 class="ui left floated header">
+            <i class="fa fa-camera"> </i>
+            <div class="scrolling content">
+               <%=projects[i].name%>
+              <div class="sub header"><%=projects[i].start%></div>
+            </div>
+          </h4>
+        </div>
+        <div class="scrolling image content">
+        <div class="ui four cards mt-4">
+        <%for(var j =0; j<projects[i].num; j++){%>
+            <a class="red card">
+                <div class="large image">
+                <img src="<%=projects[i].path%>/<%=j+1%>.jpg">
+                </div>
+            </a>
+        <%}%>
+        </div>
+    </div>
+        <div class="actions">
+          <div class="ui black deny button">Close</div>
+        </div>
+      </div>
+      <%}%>
+    </div>
+
+    <!-- <script src="/js/jquery-3.2.1.min.js"></script> -->
+    <script src="/js/popper.js"></script>
+    <!-- <script src="/js/bootstrap.min.js"></script> -->
+    <!-- <script src="/js/stellar.js"></script> -->
+    <script src="/vendors/lightbox/simpleLightbox.min.js"></script>
+    <script src="/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <!-- <script src="/js/jquery.ajaxchimp.min.js"></script> -->
+    <!-- <script src="/js/mail-script.js"></script> -->
+    <!-- <script src="/js/countdown.js"></script> -->
+
+    <script>
+      $(".special.cards .image").dimmer({
+        on: "hover"
+      });
+      $(document).ready(function() {
+        <%for(var i =0; i<projects.length; i++){%>
+        $("#modalButton<%=i+1%>").click(function() {
+          $(".<%=projects[i].id%>").modal("show");
+        });
+        <%}%>
+      });
+    </script>
+  </body>
+</html>
