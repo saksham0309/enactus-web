@@ -75,12 +75,13 @@
             <div class="content">
               <a class="header"><%=projects[i].name%></a>
               <div class="meta">
-                <span class="date">Created in <%=projects[i].start%></span>
+                <span class="date"><i class="fa fa-calendar" aria-hidden="true"></i>
+                  Created in <%=projects[i].start%></span>
               </div>
             </div>
             <div class="extra content">
               <a>
-                <i class="users icon"></i>
+                <i class="fa fa-users"></i>
                 <%=projects[i].members%> Members
               </a>
             </div>
@@ -100,10 +101,11 @@
           </h4>
         </div>
         <div class="scrolling image content">
-        <div class="ui four cards mt-4">
+        <div class="ui two
+         cards mt-4">
         <%for(var j =0; j<projects[i].num; j++){%>
             <a class="red card">
-                <div class="large image">
+                <div class="big image">
                 <img src="<%=projects[i].path%>/<%=j+1%>.jpg">
                 </div>
             </a>
@@ -116,7 +118,7 @@
       </div>
       <%}%>
     </div>
-
+    <%include frontpart/footer%>
     <!-- <script src="/js/jquery-3.2.1.min.js"></script> -->
     <script src="/js/popper.js"></script>
     <!-- <script src="/js/bootstrap.min.js"></script> -->
