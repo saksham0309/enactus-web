@@ -4,7 +4,8 @@
   "description": "website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:lambda": "netlify-lambda serve functions"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +14,11 @@
     "body-parser": "^1.19.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "netlify-lambda": "^1.4.13",
     "nodemon": "^1.19.0",
     "request": "^2.88.0"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }
