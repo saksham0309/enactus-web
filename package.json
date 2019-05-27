@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:lambda": "netlify-lambda serve functions",
-    "build": "netlify-lambda build express",
+    "build": "netlify-lambda build app",
     "start": "node server-local.js"
   },
   "author": "",
