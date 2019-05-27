@@ -199,7 +199,7 @@ var mnsMembers = [{
 }];
 
 router.get("/about", function (req, res) {
-    res.render("aboutus",{advMembers:advMembers,finMembers:finMembers, mnsMembers:mnsMembers, hrMembers:hrMembers, creMembers: creMembers});
+    res.render("aboutus",{advMembers:advMembers,finMembers:finMembers, mnsMembers:mnsMembers, hrMembers:hrMembers, creMembers: creMembers,l:1});
 });
 
 router.get("/about/adv",function(req,res){

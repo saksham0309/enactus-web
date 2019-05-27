@@ -35,13 +35,16 @@ var event = [{
 ];
 router.get("/projects/:id", function (req, res) {
     res.render("project_detail", {
-        d: event[req.params.id]
+        d: event[req.params.id],l:2
 
 
     });
 });
 router.get("/projects", function (req, res) {
-    res.render("project");
+    res.render("project",{
+
+        l:2
+    });
 });
 
 module.exports = router;

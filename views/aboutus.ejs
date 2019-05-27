@@ -17,8 +17,16 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/card.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="/semantic.min.css" />
+    <style>
+    #adv,#fin,#cre,#hr,#mns:hover{
+      cursor: pointer;
+
+    }
+
+    </style>
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -32,7 +40,7 @@
     <section class="home_banner_area">
       <div
         class="banner_inner"
-        data-slides='["/img/banner/ban1.jpg","/img/banner/ban2.jpg","/img/banner/ban3.jpg"]'
+        data-slides='["/img/banner/ban11.jpg","/img/banner/ban12.jpg","/img/banner/ban13.jpg"]'
       >
         <div class="container">
           <div class="banner_content">
@@ -198,38 +206,38 @@
     <div class="ui container centered grid mt-4">
       <div class="ui horizontal list  mt-4">
         <div class="item three wide column">
-          <img src="/images/members/Board.jpeg" class="ui tiny circular image">
+          <img src="/images/members/Board.jpeg" class="ui tiny circular image" id="adv">
         <div class="content">
           <div class="ui sub header">Board</div>
-          
+
         </div>
       </div>
       <div class="item three wide column">
-        <img class="ui tiny circular image" src="/images/members/Creative.jpeg">
+        <img class="ui tiny circular image" src="/images/members/Creative.jpeg" id="cre">
         <div class="content">
           <div class="ui sub header">Creative</div>
-          
+
         </div>
       </div>
       <div class="item three wide column">
-        <img class="ui tiny circular image" src="/images/members/Finance.jpeg">
+        <img class="ui tiny circular image" src="/images/members/Finance.jpeg" id="fin">
         <div class="content">
           <div class="ui sub header">Finance</div>
-          
+
         </div>
       </div>
       <div class="item three wide column">
-        <img src="/images/members/HR.jpeg" class="ui tiny circular image">
+        <img src="/images/members/HR.jpeg" class="ui tiny circular image" id="hr">
         <div class="content">
           <div class="ui sub header">HR</div>
-          
+
         </div>
       </div>
       <div class="item three wide column">
-        <img src="/images/members/Marketing.jpeg" class="ui tiny circular image">
+        <img src="/images/members/Marketing.jpeg" class="ui tiny circular image" id="mns">
         <div class="content">
           <div class="ui sub header">Marketing</div>
-          
+
         </div>
       </div>
     </div>
@@ -253,23 +261,7 @@
     </div> -->
     <div class="ui hidden divider"></div>
     <div class="ui container mt-4" >
-      <div class="ui top attached tabular menu stacked" id="pc">
-        <a class="item" id="adv" >
-          Advisory Board
-        </a>
-        <a class="item" id="fin">
-          Finance
-        </a>
-        <a class="item" id="mns">
-          Marketing and Sponsorship
-        </a>
-        <a class="item" id="hr">
-          Human Resource
-        </a>
-        <a class="item" id="cre">
-          Creative
-        </a>
-      </div>
+
       <!-- Advisor Board Members -->
       <div class="ui bottom attached segment" id="advMem">
         <div class="ui link cards centered">

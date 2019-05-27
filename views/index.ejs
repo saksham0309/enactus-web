@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="/vendors/lightbox/simpleLightbox.css" />
     <link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css" />
     <!-- main css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
     <script src="https://snapwidget.com/js/snapwidget.js"></script>
@@ -87,7 +89,9 @@
     <!--================ End Causes Area =================-->
     <div style="height:200px"></div>
     <!--================ Start About Us Area =================-->
-    <section class="about_area section_gap_bottom">
+    <section class="about_area section_gap_bottom" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
       <div class="container">
         <div class="row">
           <div class="single_about row">
@@ -137,7 +141,9 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
             <div class="card">
               <div class="card-body">
                 <figure>
@@ -205,7 +211,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
             <div class="card">
               <div class="card-body">
                 <figure>
@@ -252,7 +260,6 @@
 				<h2>Upcoming events</h2>
 				<p>Creepeth called face upon face yielding midst is after moveth </p>
 			</div>
-
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="single_event">
@@ -295,7 +302,6 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="col-lg-6">
 					<div class="single_event">
 						<div class="row align-items-center">
@@ -337,7 +343,6 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="col-lg-6">
 					<div class="single_event">
 						<div class="row align-items-center">
@@ -379,7 +384,6 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="col-lg-6">
 					<div class="single_event">
 						<div class="row align-items-center">
@@ -571,7 +575,6 @@
     <script>
       (function($) {
         "use strict";
-
         var $slides = $("[data-slides]");
         var images = $slides.data("slides");
         var count = images.length;
@@ -585,7 +588,6 @@
               setTimeout(slideshow, 3000);
             });
         };
-
         slideshow();
       })(jQuery);
     </script>

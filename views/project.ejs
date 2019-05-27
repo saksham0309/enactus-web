@@ -34,6 +34,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="/css3/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/bootstrap.css" />
@@ -49,7 +50,7 @@
     <% include frontpart/navbar %>
     <section
       class="home_banner_area"
-      data-slides='["/img/banner/ban1.jpg","/img/banner/ban2.jpg","/img/banner/ban3.jpg"]'
+      data-slides='["/img/banner/ban11.jpg","/img/banner/ban12.jpg","/img/banner/ban13.jpg"]'
     >
       <div class="banner_inner">
         <div class="container">
@@ -115,7 +116,9 @@
           </div>
           <!-- .col -->
           
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-lg-6" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
             <div class="cause-wrap d-flex flex-wrap justify-content-between">
               <figure class="m-0">
                 <img src="/images/event/X/1.jpg" alt="" />
@@ -170,7 +173,9 @@
         <!-- .row -->
 
         <div class="row">
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-lg-6" data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
             <div class="cause-wrap d-flex flex-wrap justify-content-between">
               <figure class="m-0">
                 <img src="/images/event/Naari/20.jpg" alt="" />

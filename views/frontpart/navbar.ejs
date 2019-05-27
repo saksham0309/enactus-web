@@ -13,11 +13,11 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/projects">Projects</a>
-                            <li class="nav-item"><a class="nav-link" href="/events">Events</a>
-                            <li class="nav-item"><a class="nav-link" href="/gallery">Gallery</a>
+                            <li id="H1" class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                            <li id="A1" class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                            <li id="P1" class="nav-item"><a class="nav-link" href="/projects">Projects</a>
+                            <li id="E1" class="nav-item"><a class="nav-link" href="/events">Events</a>
+                            <li id="G1" class="nav-item"><a class="nav-link" href="/gallery">Gallery</a>
                             <li class="nav-item"><a class="nav-link" href="#contactus">Contact</a></li>
                         </ul>
                     </div>
@@ -26,3 +26,10 @@
         </div>
     </div>
 </header>
+<script>
+var a=<%= l %>;
+var g=["H1","A1","P1","E1","G1"];
+var d=document.getElementById(g[a]).getAttribute("class")+" "+"active";
+document.getElementById(g[a]).setAttribute("class",d);
+
+</script>
