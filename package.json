@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:lambda": "netlify-lambda serve functions"
+    "start:lambda": "netlify-lambda serve functions",
+    "build": "netlify-lambda build express",
+    "start": "node server-local.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +18,8 @@
     "express": "^4.16.4",
     "netlify-lambda": "^1.4.13",
     "nodemon": "^1.19.0",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "serverless-http": "^2.0.2"
   },
   "engines": {
     "node": "10.x"
