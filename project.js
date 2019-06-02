@@ -20,6 +20,16 @@ var event = [{
         desc4: 'Our basic idea was to empower the ladies from the Chennai slums, the transgender community and the Rohingya refugees and distribute the profit amongst them. '
 
     },
+
+    {
+        date:'26 July 2017',
+        name:'Project Naari',
+        url:"",
+        desc1:'The project creates awareness on the methods to be taken up in disposal of the sanitary napkins and the safety measures.It focuses on biodegradable pads which is a hygienic practice and is also an environment friendly product.Project NAARI aims to provide HYGIENIC AND HEALTHY environment to people.' ,
+        desc2:'THE NEED FOR NAARI: Menstrual hygiene and management is a very elementary knowledge that people need to have. Living in the 21st century where the world is heading with technology and modernisation, the taboo on menstruation still prevails and there are people who are still have not explored on what is the basic hygiene required for a healthy living. Thus, it is necessary for women to know and use hygienic as well as environment friendly methods during menstruation. NAARI is an initiative taken for this issue.',
+        desc3:'<b>PROJECT PARTNERS:</b><br>We have collaborated with Ecofemme (A social enterprise by women that manufactures and sells cloth pads) and Myna Mahila (a foundation that aspires to empower women and end period poverty).',
+        desc4:''
+    },
     {
         date: '26 july 2017',
         name: 'Project Pragati',
@@ -28,6 +38,16 @@ var event = [{
         desc2: 'This is beneficial to the farmers and will help us contribute to the agricultural sector, and assist to sustain it. Project Pragati mainly focuses on providing the under privileged sector of the society with the skill-sets required for a business model, so that there exists minimum competition in the beginning of the business thus allowing it to grow at a faster rate. The basic idea would require the utilization of waste water. ',
         desc3: 'The target audience would be taught the methodology behind growing the algae using a small setup and waste water of their household/ locality i.e. the efficient usage of the available resources and waste water to come up with something productive. They would be taught the basic means of communication to make it a self-sustainable process. he synthetic fertilizers would get replaced by cheap and organic ones thus making the soil nutrient-rich and porous, improving the quality of the soil. . The fertilizers present in the market give a certain amount of yield that can be increased by mixing the algae produced by the setups.',
         desc4: 'Our farmers are the backbone to our nation so aiding them to meet the demands of the ever growing population without compromising on quality or safety is of utmost importance. They would be taught the basic means of communication to make it a self-sustainable process.'
+    }
+    ,
+    {
+        date:'26 July 2017',
+        name:'Project Naari',
+        url:"",
+        desc1:'',
+        desc2:'',
+        desc3:'',
+        desc4:''
     }
 
 
