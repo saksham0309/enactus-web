@@ -24,10 +24,10 @@ var event = [{
     {
         date:'26 July 2017',
         name:'Project Naari',
-        url:"",
+        url:"/images/event/Naari/20.jpg",
         desc1:'The project creates awareness on the methods to be taken up in disposal of the sanitary napkins and the safety measures.It focuses on biodegradable pads which is a hygienic practice and is also an environment friendly product.Project NAARI aims to provide HYGIENIC AND HEALTHY environment to people.' ,
         desc2:'THE NEED FOR NAARI: Menstrual hygiene and management is a very elementary knowledge that people need to have. Living in the 21st century where the world is heading with technology and modernisation, the taboo on menstruation still prevails and there are people who are still have not explored on what is the basic hygiene required for a healthy living. Thus, it is necessary for women to know and use hygienic as well as environment friendly methods during menstruation. NAARI is an initiative taken for this issue.',
-        desc3:'<b>PROJECT PARTNERS:</b><br>We have collaborated with Ecofemme (A social enterprise by women that manufactures and sells cloth pads) and Myna Mahila (a foundation that aspires to empower women and end period poverty).',
+        desc3:'PROJECT PARTNERS:We have collaborated with Ecofemme (A social enterprise by women that manufactures and sells cloth pads) and Myna Mahila (a foundation that aspires to empower women and end period poverty).',
         desc4:''
     },
     {
