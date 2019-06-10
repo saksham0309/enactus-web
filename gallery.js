@@ -9,7 +9,7 @@ var projects=[
         path: '/images/event/Malar',
         cover: 16,
         start: "Aug 2016",
-        members: 20
+
     },
     {
         name: 'Al',
@@ -18,7 +18,7 @@ var projects=[
         path: '/images/event/al',
         cover: 2,
         start: "Aug 2016",
-        members: 20
+
     },
     {
         name: 'Enactus India Fest',
@@ -27,7 +27,7 @@ var projects=[
         path: '/images/event/fest',
         cover: 2,
         start: "Aug 2016",
-        members: 20
+
     },
     {
         name: 'Naari',
@@ -36,7 +36,7 @@ var projects=[
         path: '/images/event/Naari',
         cover: 2,
         start: "Aug 2016",
-        members: 20
+
     },
     {
         name: 'Trad',
@@ -45,7 +45,7 @@ var projects=[
         path: '/images/event/trad',
         cover: 2,
         start: "Aug 2016",
-        members: 20
+
     },
     {
         name: 'Diwali Mela',
@@ -54,7 +54,7 @@ var projects=[
         path: '/images/event/ujwal',
         cover: 2,
         start: "Aug 2016",
-        members: 20
+
     },
     {
         name: 'Project X',
@@ -63,7 +63,7 @@ var projects=[
         path: '/images/event/X',
         cover: 2,
         start: "Aug 2016",
-        members: 20
+
     }];
 
 router.get("/gallery",function(req,res){
