@@ -32,6 +32,13 @@ var advMembers = [{
     photo: "pranav.jpg"
 },
 {
+    name: "Divya Kannan",
+    desc: "Being selfless and determined ,with a vision for a better tomorrow, I want to spread happiness by helping the underprivileged.",
+    desg: "Member",
+    photo: ""
+}
+,
+{
     name: "Ojaswini Marathe",
     desg: "Member",
     desc: "A benevolent soul, bubbling with incandescent energy, Ojaswini's heart is too big for her body. She has a penchant for helping those in need and making a difference in this world.",
@@ -85,7 +92,21 @@ var finMembers = [{
     desg: "Member",
     desc: "I love writing and exploring people. I want to be an entrepreneur in my life and love reading books. I love taking interest in something extra that gives me goosebumbs everytime i do it.I love living life my way.",
     photo: "urmila.jpg"
-}];
+},
+{
+    name: "Shivangi Mehrotra",
+    desg: "Member",
+    desc: "I have effective communication skills and I enjoy public speaking.    ",
+    photo: ""
+}
+,
+{
+    name: "Utkarsh Mishra",
+    desg: "Member",
+    desc: "Hard working and passionate for doing something good for the society.",
+    photo: ""
+}
+];
 
 var creMembers = [{
     name: "Devashish Srivastava",
@@ -122,7 +143,77 @@ var creMembers = [{
     desg: "Member",
     desc: "Dynamically Agile.",
     photo: "archit.jpg"
-}];
+},
+{
+    name: "Varun. G",
+    desg: "Member",
+    desc: "Btech Mech, born and brought up in Chennai, but my heart follows Infinity and beyond. ",
+    photo: ""
+},
+
+{
+    name: "Geethu Haridas",
+    desg: "Member",
+    desc: "Like any other person I always have had difficulty answering this question. Unless someone is very specific about what they want to know, I cannot give a satisfactory answer. I'm a generally quite person and because of this a lot of people assume that I am a very calm and shy which is not always so. I like to believe that I have a logical and rational mind which is ironic given that I'm in the content writing department.",
+    photo: ""
+},
+{
+    name: "Meera George",
+    desg: "Member",
+    desc: "Head in the clouds. Living in the moment.Reaching beyond what destiny has to offer.",
+    photo: ""
+},
+{
+    name: "Ria Elizabeth Ranju",
+    desg: "Member",
+    desc: "Some steps up, some steps down. Exploring the staircases. Opening the doors. Living life one moment at a time.",
+    photo: ""
+},
+
+{
+    name: "V.Jayashree Nivedhitha",
+    desg: "Member",
+    desc: "A fun loving girl who is always ready to crack puns and jokes on any situation. A deep desire to help the society has landed my way into Creative Team of Enactus. ",
+    photo: ""
+},
+
+{
+    name: "Sangamithrai R",
+    desg: "Member",
+    desc: "I' am an artist by passion.I love to sketch and paint.I write during my free time.",
+    photo: ""
+},
+
+{
+    name: "Sarthak Parthasarathi Mohanty",
+    desg: "Member",
+    desc: "I am determined and never give up until I get something right. Always ready to shoot.",
+    photo: ""
+},
+
+{
+    name: "Soumitro Datta",
+    desg: "Member",
+    desc: "Can read and understand a couple laguages of machines. 2 Parts Web Developer, 1 Part Distance runner, 1/2 Part Bookworm, 3 Parts Party Person....Too many parts?    ",
+    photo: ""
+}
+,
+{
+    name: "Shaurya Gupta",
+    desg: "Member",
+    desc: "I am just a curious person. I like to learn new things and have different experiences . I try to keep growing.    ",
+    photo: ""
+}
+,
+{
+    name: "Priyam Gupta",
+    desg: "Member",
+    desc: "I think of myself as a hard-working person but at the same time I like to enjoy  life ",
+    photo: ""
+}
+
+
+];
 
 var hrMembers = [{
     name: "Ashna Jacob",
@@ -133,9 +224,39 @@ var hrMembers = [{
 {
     name: "Shanal Tripathy",
     desg: "Member",
-    desc: "bla  bka bla",
-    photo: "janedoe"
-}];
+    desc: "",
+    photo: ""
+},
+{
+    name: "Aneesha Seth",
+    desg: "Member",
+    desc: "Enthusiastic and willing to help bring about awareness. Committed to giving back to society. ",
+    photo: ""
+},
+
+{
+    name: "Kush Khanna",
+    desg: "Member",
+    desc: "I, Kush Khanna, am a student at VIT Chennai pursuing ECM. I believe in expressing myself creatively through different forms and therefore, participate in various activities. I am currently a part of the Drama Club, and have given various performances for the same.  The 'Joy of Giving' is not just a motto, but a driving force in my life since a very long time.  My grandfather, JD Khurana, provides education to roadside children for free, and has set up a makeshift school over a period of time for the same. Helping him throughout his journey has taught me to practice perseverence and to believe in one's vision and cause, even when there is no one supporting you. I have actively participated and performed for various NGOs like CAN KIDS, ZIKR, and have served as a mentor for the Shiksha Kendra initiative at my school.  I hope to continue my process of giving back to the society in my own small ways, and therefore I've joined Enactus.    ",
+    photo: ""
+}
+,
+{
+    name: "Austin Joseph",
+    desg: "Member",
+    desc: "Just your average teenager, likes to bond with people and make memories. Fond of music and literature, and does a lot of co-curriculars.    ",
+    photo: ""
+}
+,
+{
+    name: "SANJANA PODDER",
+    desg: "Member",
+    desc: "I am an aspiring engineer, a diligent workaholic and a polyglot, striving for self-satisfaction in all my endeavours in life!    ",
+    photo: ""
+}
+
+
+];
 
 var mnsMembers = [{
     name: "Ananya Srinath",
@@ -155,6 +276,36 @@ var mnsMembers = [{
     desc: "An active member working in Marketing Department of Enactus VIT Chennai. Contributing towards spreading social awareness.",
     photo: "aditi.jpg"
 },
+{
+    name: "Pritrishna Sarmah",
+    desg: "Member",
+    desc: "A hard working engineer and a sincere person pursuing Electrical and Electronics Engineering. Dedicated towards work.    ",
+    photo: ""
+}
+
+
+,
+{
+    name: "Ayushi Sharma ",
+    desg: "Member",
+    desc: "For those who know me, i can describe myself in one word, A learner. A music lover by heart, I embrace change as music flows, and balance family and future composedly. A good listener and a philanthropist at heart. I live for those smiles.    ",
+    photo: ""
+}
+,
+{
+    name: "Akshitha Shankar",
+    desg: "Member",
+    desc: " I have always wanted to do my part to help improve lives of people who are in need. It has always been in me because of my parents who always say, 'Service to Humanity, is service to God Himself!'. It doesn't matter how big or small, it's the heart you put into it and the effort that counts!",
+    photo: ""
+}
+,
+{
+    name: "Srinidhi Raja",
+    desg: "Member",
+    desc: "Good communication skills. Extrovert. Good at getting work done and leadership quality. Easy going.",
+    photo: "https://imgur.com/6vZRQrP "
+}
+,
 {
     name: "Manas Srivastava",
     desg: "Member",

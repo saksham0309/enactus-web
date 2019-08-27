@@ -604,6 +604,31 @@ button:focus {
     }
 /* recent Events css End
 =========================================================================================== */
+
+/* UI tiny Image  
+=========================================================================================== */
+
+.cen{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 5px !important;
+}
+.brick{
+  margin: auto;
+  padding: 1px;
+  background-image: url(/images/background/bg3.jpg);
+  background-size: contain;
+  border-radius: 50px;
+}
+.bri{
+  background: #ffffff52 !important;
+  margin: 10px !important;
+  border-radius: 30px !important;
+}
+
+/* UI tiny Image End
+=========================================================================================== */
+
 /* Team Area css
 ============================================================================================ */
 .team_area {
