@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#fec300">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#fec300">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fec300">
     <title>About Us</title>
 
     <!-- Bootstrap CSS -->
@@ -14,21 +20,13 @@
     <link rel="stylesheet" href="/vendors/lightbox/simpleLightbox.css" />
     <link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css" />
     <!-- main css -->
-    <link rel="stylesheet" href="/css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <!-- <link rel="stylesheet" href="/css/gallery.css" /> -->
 
     <link rel="stylesheet" type="text/css" href="/semantic.min.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"
-    ></script>
-    <script src="/semantic.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <%include frontpart/navbar%>
@@ -53,68 +51,55 @@
         </div>
       </div>
     </section>
-    <div class="main_title">
-      <h2>Gallery</h2>
-      <p>A glimpse into who we are and what we do to change the world around</p>
-    </div>
-    <div class="ui container gallery-head">
-      <div class="ui segment">
-        <div class="ui special cards centered">
-            <%for(var i =0; i<projects.length; i++){%>
-          <div class=" card">
-            <div class="blurring dimmable image">
-              <div class="ui inverted dimmer">
-                <div class="content">
-                  <div class="center">
-                    <button class="ui primary button" id="modalButton<%=i+1%>">
-                      View
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <img src="<%=projects[i].path%>/<%=projects[i].cover%>.jpg" />
-            </div>
-            <div class="content">
-              <a class="header"><%=projects[i].name%></a>
-              <div class="meta">
-                <span class="date"><i class="fa fa-calendar" aria-hidden="true"></i>
-                  Created in <%=projects[i].start%></span>
-              </div>
-            </div>
+    <br/><br/>
+<div class=" container ">
+<div class="container   row">
+   <div>
+    <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+<div class="pa-gallery-player-widget" style="width:400px; height:400px; border-radius: 0%; display:none;"
+  data-link="https://photos.app.goo.gl/JFf8ZRKdpmmXjW6a7"
+  data-title="Project X"
+  data-description="8 new photos added to shared album"
+  data-delay="1"
+  data-background-color="transparent">
+  <object data="https://lh3.googleusercontent.com/etp3qKwRKm2Yz40FvbgKn8dFHjsKVe2qNGEfQ-dYKzFp-dhk3ga2R27mbhP5PMFYHj7GHHDTy77TTSHqYeNfuGcaeB6eiCy7zkjPofFsMiqxg3z1sCBptVvl4n1kCcMY7U9sV_RBRg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/kA5GJoNuPZvu7Nz5nC8ZsY0iBabJIEKF-bK429mOkwIT5JrcpAeMwXFxf6hqsytVxwe5sXxP9VC4qAEqT8c3zDzx3j4vIhjXrZYAG1r2Zg52co9VpQssRoGqAu0Fq9dqWCwE51ZAHg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/TsXDqCwv1LKnXDoi-l5ksvmQNkQka6Yl3DZPDhs1cQi2FeZN9MBuY8JDY4fy96orAjP7b1EHp_foo-9uXpPVq4_8x0kzLnu8J695RK62yriXdFIIsTIGS07yP4N0_Jy_moz_rjLKBA=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/1W8JuxD9MVnHTePBj7WVh5GzZ9iUrPjeMnCepR8qgiL0hjGQ_7jCyyy6bb7ORE8OMKAa4DEdqefTR0G8OizuFvNrRqtZBegQUp4Xw7TnantTdhuanQEBXl72Y_sa3X7FNhAXEb__rw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/fDmrwFLrArQNXGmX3N8OrUdNs3t_9H0amhcOGT8gPBoO9mP13R-m21NflhewAh1-SdNFjkkjQ8dMfPZVifkNrjVehdlMWXy9QKcmv7w2VoMV5FQnESxAsPCXnp9xVjiKGdVegPW6VQ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/qw15g75D3DZPY8YNQaUmUXnJ2N0sllWG0xtkvkC4JXBZrG5hLYkfe6VdLtw-uAU8qg6QjF5zh01cNituLgrJt5ryWnAu3V3PgrWrjbMecaQl_0yn1ucV33BIHgfT9qlGHQLL7Gy_Ww=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/u6qCLy8oJSes0eFU9yUtqsTaZrolfeTBxVEDyrT2pHQk8dph1MHnLJIqLlUDLsKBpEM8ctWf0xweck8liw7anaTJvsGEeV-03UM9pF2ciiMlKM74EAaVe4mlXChFWRWx83fxcPhxOw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/Fx8VSJXVxvmae0xCB3UQbbNp6sBKNuAjjcKQwz2VZfISGUHrhv9Xi4UpExgM1ME2ALHOdIn5Lvo-bUr6y3dOULXsrwDKabDwNH4qtyFRFpUSg4DB65xA8nfacjxO-CW9IjVRXMnR3A=w1920-h1080"></object>
+</div>
+</div>
 
-          </div>
-        <%}%>
-        </div>
-      </div>
-      <%for(var i =0; i<projects.length; i++){%>
-      <div class="ui modal <%=projects[i].id%>">
-        <div class="ui header">
-          <h4 class="ui left floated header">
-            <i class="fa fa-camera"> </i>
-            <div class="scrolling content">
-               <%=projects[i].name%>
-              <div class="sub header"><%=projects[i].start%></div>
-            </div>
-          </h4>
-        </div>
-        <div class="scrolling image content">
-        <div class="ui two
-         cards mt-4">
-        <%for(var j =0; j<projects[i].num; j++){%>
-            <a class="red card">
-                <div class="big image">
-                <img src="<%=projects[i].path%>/<%=j+1%>.jpg">
-                </div>
-            </a>
-        <%}%>
-        </div>
-    </div>
-        <div class="actions">
-          <div class="ui black deny button">Close</div>
-        </div>
-      </div>
-      <%}%>
-    </div>
+
+
+<div>
+    <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+<div class="pa-gallery-player-widget" style="width:400px; height:400px; border-radius: 0%; display:none;"
+  data-link="https://photos.app.goo.gl/JFf8ZRKdpmmXjW6a7"
+  data-title="Project Naari"
+  data-description="8 new photos added to shared album"
+  data-delay="1"
+  data-background-color="transparent">
+  <object data="https://lh3.googleusercontent.com/etp3qKwRKm2Yz40FvbgKn8dFHjsKVe2qNGEfQ-dYKzFp-dhk3ga2R27mbhP5PMFYHj7GHHDTy77TTSHqYeNfuGcaeB6eiCy7zkjPofFsMiqxg3z1sCBptVvl4n1kCcMY7U9sV_RBRg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/kA5GJoNuPZvu7Nz5nC8ZsY0iBabJIEKF-bK429mOkwIT5JrcpAeMwXFxf6hqsytVxwe5sXxP9VC4qAEqT8c3zDzx3j4vIhjXrZYAG1r2Zg52co9VpQssRoGqAu0Fq9dqWCwE51ZAHg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/TsXDqCwv1LKnXDoi-l5ksvmQNkQka6Yl3DZPDhs1cQi2FeZN9MBuY8JDY4fy96orAjP7b1EHp_foo-9uXpPVq4_8x0kzLnu8J695RK62yriXdFIIsTIGS07yP4N0_Jy_moz_rjLKBA=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/1W8JuxD9MVnHTePBj7WVh5GzZ9iUrPjeMnCepR8qgiL0hjGQ_7jCyyy6bb7ORE8OMKAa4DEdqefTR0G8OizuFvNrRqtZBegQUp4Xw7TnantTdhuanQEBXl72Y_sa3X7FNhAXEb__rw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/fDmrwFLrArQNXGmX3N8OrUdNs3t_9H0amhcOGT8gPBoO9mP13R-m21NflhewAh1-SdNFjkkjQ8dMfPZVifkNrjVehdlMWXy9QKcmv7w2VoMV5FQnESxAsPCXnp9xVjiKGdVegPW6VQ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/qw15g75D3DZPY8YNQaUmUXnJ2N0sllWG0xtkvkC4JXBZrG5hLYkfe6VdLtw-uAU8qg6QjF5zh01cNituLgrJt5ryWnAu3V3PgrWrjbMecaQl_0yn1ucV33BIHgfT9qlGHQLL7Gy_Ww=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/u6qCLy8oJSes0eFU9yUtqsTaZrolfeTBxVEDyrT2pHQk8dph1MHnLJIqLlUDLsKBpEM8ctWf0xweck8liw7anaTJvsGEeV-03UM9pF2ciiMlKM74EAaVe4mlXChFWRWx83fxcPhxOw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/Fx8VSJXVxvmae0xCB3UQbbNp6sBKNuAjjcKQwz2VZfISGUHrhv9Xi4UpExgM1ME2ALHOdIn5Lvo-bUr6y3dOULXsrwDKabDwNH4qtyFRFpUSg4DB65xA8nfacjxO-CW9IjVRXMnR3A=w1920-h1080"></object>
+</div>
+</div>
+
+
+</div>
+
+</div>
+<br/><br/>
+
     <%include frontpart/footer%>
     <!-- <script src="/js/jquery-3.2.1.min.js"></script> -->
     <script src="/js/popper.js"></script>
@@ -138,5 +123,32 @@
         <%}%>
       });
     </script>
+        <script>
+      (function($) {
+        "use strict";
+        var $slides = $("[data-slides]");
+        var images = $slides.data("slides");
+        var count = images.length;
+        var slideshow = function() {
+          $slides
+            .css(
+              "background-image",
+              'url("' + images[Math.floor(Math.random() * count)] + '")'
+            )
+            .show(0, function() {
+              setTimeout(slideshow, 3000);
+            });
+        };
+        slideshow();
+      })(jQuery);
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/semantic.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   </body>
 </html>
