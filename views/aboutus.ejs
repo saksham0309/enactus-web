@@ -1073,7 +1073,7 @@ color: white;
 			              <!--Carousel Indicators-->
 			              <ol class="carousel-indicators">
 			                <li data-target="#carousel5" data-slide-to="0" class="active"></li>
-			                <% for(var i=1; i<mnsMembers.length; i++) {%>
+			                <% for(var i=1; i<mns.length; i++) {%>
                           <li data-target="#carousel5" data-slide-to="<%= i %>"></li>
 
                           <% } %>
@@ -1085,33 +1085,33 @@ color: white;
                             <div class="carousel-item active">
                                 <div class="team_item">
                                   <div class="team_img">
-                                    <img class="img-fluid rounded-circle " src="/images/members/<%=mnsMembers[0].photo%>" alt="" />
+                                    <img class="img-fluid rounded-circle " src="<%=mns[0].img%>" alt="" />
                                   </div>
                                   <div class="team_name">
-                                    <h4 class="chc" ><strong><%=mnsMembers[0].name%></strong></h4>
-                                    <p class="chc"><strong><%=mnsMembers[0].desg%></strong></p>
+                                    <h4 class="chc" ><strong><%=mns[0].name%></strong></h4>
+                                    <p class="chc"><strong><%=mns[0].deg%></strong></p>
                                     <p class="mt-20 chc">
                                       <strong>
-                                        <%=mnsMembers[0].desc%>
+                                        <%=mns[0].desp%>
                                       </strong>
                                     </p>
                                   </div>
                                 </div>
                               </div>
 
-                              <% for(var i=1; i<mnsMembers.length; i++) {%>
+                              <% for(var i=1; i<mns.length; i++) {%>
 
                                   <div class="carousel-item">
                                     <div class="team_item">
                                       <div class="team_img">
-                                        <img class="img-fluid rounded-circle" src="/images/members/<%=mnsMembers[i].photo%>" alt="" />
+                                        <img class="img-fluid rounded-circle" src="<%=mns[i].img%>" alt="" />
                                       </div>
                                       <div class="team_name">
-                                        <h4 class="chc"><strong><%=mnsMembers[i].name%></strong></h4>
-                                        <p class="chc"><strong><%=mnsMembers[i].desg%></strong></p>
+                                        <h4 class="chc"><strong><%=mns[i].name%></strong></h4>
+                                        <p class="chc"><strong><%=mns[i].deg%></strong></p>
                                         <p class="mt-20 chc">
                                           <strong>
-                                            <%=mnsMembers[i].desc%>
+                                            <%=mns[i].desp%>
                                           </strong>
                                           </p>
                                       </div>
