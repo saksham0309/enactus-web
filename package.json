@@ -14,7 +14,10 @@
     "body-parser": "^1.19.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "imgur": "^0.3.1",
+    "mysql": "^2.17.1",
     "netlify-lambda": "^1.4.13",
+    "node-fetch": "^2.6.0",
     "nodemon": "^1.19.0",
     "request": "^2.88.0"
   },

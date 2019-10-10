@@ -711,7 +711,7 @@ color: white;
 			              <!--Carousel Indicators-->
 			              <ol class="carousel-indicators">
                       <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-                      <% for(var i=1; i<advMembers.length; i++) {%>
+                      <% for(var i=1; i<adv.length; i++) {%>
 			                <li data-target="#carousel1" data-slide-to="<%= i %>"></li>
 
                       <% } %>
@@ -723,33 +723,33 @@ color: white;
 			                    <div class="carousel-item active">
 			                      <div class="team_item">
 			                        <div class="team_img">
-			                          <img class="img-fluid rounded-circle " src="/images/members/<%=advMembers[0].photo%>" alt="" />
+			                          <img class="img-fluid rounded-circle " src="<%=adv[0].img%>" alt="" />
 			                        </div>
 			                        <div class="team_name">
-			                          <h4 class="chc" ><strong><%=advMembers[0].name%></strong></h4>
-			                          <p class="chc"><strong><%=advMembers[0].desg%></strong></p>
+			                          <h4 class="chc" ><strong><%=adv[0].name%></strong></h4>
+			                          <p class="chc"><strong><%=adv[0].deg%></strong></p>
 			                          <p class="mt-20 chc">
                                   <strong>
-                                    <%=advMembers[0].desc%>
+                                    <%=adv[0].desp%>
                                   </strong>
 			                          </p>
 			                        </div>
 			                      </div>
 			                    </div>   
 			                  
-                          <% for(var i=1; i<advMembers.length; i++) {%>
+                          <% for(var i=1; i<adv.length; i++) {%>
 
 			                    <div class="carousel-item">
 			                      <div class="team_item">
 			                        <div class="team_img">
-			                          <img class="img-fluid rounded-circle " src="/images/members/<%=advMembers[i].photo%>" alt="" />
+			                          <img class="img-fluid w-50 h-50 rounded-circle " src="<%=adv[i].img%>" alt="" />
 			                        </div>
 			                        <div class="team_name">
-			                          <h4 class="chc"><strong><%=advMembers[i].name%></strong></h4>
-			                          <p class="chc"><strong><%=advMembers[i].desg%></strong></p>
+			                          <h4 class="chc"><strong><%=adv[i].name%></strong></h4>
+			                          <p class="chc"><strong><%=adv[i].deg%></strong></p>
 			                          <p class="mt-20 chc">
                                   <strong>
-                                    <%=advMembers[i].desc%>
+                                    <%=adv[i].desp%>
                                   </strong>
                                   </p>
 			                        </div>
@@ -801,7 +801,7 @@ color: white;
 			              <!--Carousel Indicators-->
 			              <ol class="carousel-indicators">
 			                <li data-target="#carousel2" data-slide-to="0" class="active"></li>
-			                <% for(var i=1; i<creMembers.length; i++) {%>
+			                <% for(var i=1; i<cre.length; i++) {%>
                           <li data-target="#carousel2" data-slide-to="<%= i %>"></li>
 
                           <% } %>
@@ -813,33 +813,33 @@ color: white;
                             <div class="carousel-item active">
                                 <div class="team_item">
                                   <div class="team_img">
-                                    <img class="img-fluid rounded-circle " src="/images/members/<%=creMembers[0].photo%>" alt="" />
+                                    <img class="img-fluid rounded-circle " src="<%=cre[0].img%>" alt="" />
                                   </div>
                                   <div class="team_name">
-                                    <h4 class="chc" ><strong><%=creMembers[0].name%></strong></h4>
-                                    <p class="chc"><strong><%=creMembers[0].desg%></strong></p>
+                                    <h4 class="chc" ><strong><%=cre[0].name%></strong></h4>
+                                    <p class="chc"><strong><%=cre[0].deg%></strong></p>
                                     <p class="mt-20 chc">
                                       <strong>
-                                        <%=creMembers[0].desc%>
+                                        <%=cre[0].desp%>
                                       </strong>
                                     </p>
                                   </div>
                                 </div>
                               </div>
 
-                              <% for(var i=1; i<creMembers.length; i++) {%>
+                              <% for(var i=1; i<cre.length; i++) {%>
 
                                   <div class="carousel-item">
                                     <div class="team_item">
                                       <div class="team_img">
-                                        <img class="img-fluid rounded-circle " src="/images/members/<%=creMembers[i].photo%>" alt="" />
+                                        <img class="img-fluid w-50 h-50 rounded-circle " src="<%=cre[i].img%>" alt="" />
                                       </div>
                                       <div class="team_name">
-                                        <h4 class="chc"><strong><%=creMembers[i].name%></strong></h4>
-                                        <p class="chc"><strong><%=creMembers[i].desg%></strong></p>
+                                        <h4 class="chc"><strong><%=cre[i].name%></strong></h4>
+                                        <p class="chc"><strong><%=cre[i].deg%></strong></p>
                                         <p class="mt-20 chc">
                                           <strong>
-                                            <%=creMembers[i].desc%>
+                                            <%=cre[i].desp%>
                                           </strong>
                                           </p>
                                       </div>
@@ -890,7 +890,7 @@ color: white;
 			              <!--Carousel Indicators-->
 			              <ol class="carousel-indicators">
 			                <li data-target="#carousel3" data-slide-to="0" class="active"></li>
-                      <% for(var i=1; i<finMembers.length; i++) {%>
+                      <% for(var i=1; i<fin.length; i++) {%>
                           <li data-target="#carousel3" data-slide-to="<%= i %>"></li>
 
                           <% } %>
@@ -902,33 +902,33 @@ color: white;
                             <div class="carousel-item active">
                                 <div class="team_item">
                                   <div class="team_img">
-                                    <img class="img-fluid rounded-circle " src="https://photos.app.goo.gl/7MvM9ADfQmo7ChGeA" alt="" />
+                                    <img class="img-fluid w-50 h-50 rounded-circle " src="<%=fin[0].img%>" alt="" />
                                   </div>
                                   <div class="team_name">
-                                    <h4 class="chc" ><strong><%=finMembers[0].name%></strong></h4>
-                                    <p class="chc"><strong><%=finMembers[0].desg%></strong></p>
+                                    <h4 class="chc" ><strong><%=fin[0].name%></strong></h4>
+                                    <p class="chc"><strong><%=fin[0].deg%></strong></p>
                                     <p class="mt-20 chc">
                                       <strong>
-                                        <%=finMembers[0].desc%>
+                                        <%=fin[0].desp%>
                                       </strong>
                                     </p>
                                   </div>
                                 </div>
                               </div>
 
-                              <% for(var i=1; i<finMembers.length; i++) {%>
+                              <% for(var i=1; i<fin.length; i++) {%>
 
                                   <div class="carousel-item">
                                     <div class="team_item">
                                       <div class="team_img">
-                                        <img class="img-fluid rounded-circle " src="/images/members/<%=finMembers[i].photo%>" alt="" />
+                                        <img class="img-fluid w-50 h-50 rounded-circle " src="<%=fin[i].img%>" alt="" />
                                       </div>
                                       <div class="team_name">
-                                        <h4 class="chc"><strong><%=finMembers[i].name%></strong></h4>
-                                        <p class="chc"><strong><%=finMembers[i].desg%></strong></p>
+                                        <h4 class="chc"><strong><%=fin[i].name%></strong></h4>
+                                        <p class="chc"><strong><%=fin[i].deg%></strong></p>
                                         <p class="mt-20 chc">
                                           <strong>
-                                            <%=finMembers[i].desc%>
+                                            <%=fin[i].desp%>
                                           </strong>
                                           </p>
                                       </div>
@@ -987,7 +987,7 @@ color: white;
 			              <!--Carousel Indicators-->
 			              <ol class="carousel-indicators">
 			                <li data-target="#carousel4" data-slide-to="0" class="active"></li>
-			                <% for(var i=1; i<hrMembers.length; i++) {%>
+			                <% for(var i=1; i<hr.length; i++) {%>
                           <li data-target="#carousel4" data-slide-to="<%= i %>"></li>
 
                           <% } %>
@@ -999,33 +999,33 @@ color: white;
                             <div class="carousel-item active">
                                 <div class="team_item">
                                   <div class="team_img">
-                                    <img class="img-fluid rounded-circle" src="/images/members/<%=hrMembers[0].photo%>" alt="" />
+                                    <img class="img-fluid w-50 h-50 rounded-circle" src="<%=hr[0].img%>" alt="" />
                                   </div>
                                   <div class="team_name">
-                                    <h4 class="chc" ><strong><%=hrMembers[0].name%></strong></h4>
-                                    <p class="chc"><strong><%=hrMembers[0].desg%></strong></p>
+                                    <h4 class="chc" ><strong><%=hr[0].name%></strong></h4>
+                                    <p class="chc"><strong><%=hr[0].deg%></strong></p>
                                     <p class="mt-20 chc">
                                       <strong>
-                                        <%=hrMembers[0].desc%>
+                                        <%=hr[0].desp%>
                                       </strong>
                                     </p>
                                   </div>
                                 </div>
                               </div>
 
-                              <% for(var i=1; i<hrMembers.length; i++) {%>
+                              <% for(var i=1; i<hr.length; i++) {%>
 
                                   <div class="carousel-item">
                                     <div class="team_item">
                                       <div class="team_img">
-                                        <img class="img-fluid rounded-circle" src="/images/members/<%=hrMembers[i].photo%>" alt="" />
+                                        <img class="img-fluid w-50 h-50 rounded-circle" src="<%=hr[i].img%>" alt="" />
                                       </div>
                                       <div class="team_name">
-                                        <h4 class="chc"><strong><%=hrMembers[i].name%></strong></h4>
-                                        <p class="chc"><strong><%=hrMembers[i].desg%></strong></p>
+                                        <h4 class="chc"><strong><%=hr[i].name%></strong></h4>
+                                        <p class="chc"><strong><%=hr[i].deg%></strong></p>
                                         <p class="mt-20 chc">
                                           <strong>
-                                            <%=hrMembers[i].desc%>
+                                            <%=hr[i].desp%>
                                           </strong>
                                           </p>
                                       </div>
@@ -1073,7 +1073,7 @@ color: white;
 			              <!--Carousel Indicators-->
 			              <ol class="carousel-indicators">
 			                <li data-target="#carousel5" data-slide-to="0" class="active"></li>
-			                <% for(var i=1; i<mnsMembers.length; i++) {%>
+			                <% for(var i=1; i<mns.length; i++) {%>
                           <li data-target="#carousel5" data-slide-to="<%= i %>"></li>
 
                           <% } %>
@@ -1085,33 +1085,33 @@ color: white;
                             <div class="carousel-item active">
                                 <div class="team_item">
                                   <div class="team_img">
-                                    <img class="img-fluid rounded-circle " src="/images/members/<%=mnsMembers[0].photo%>" alt="" />
+                                    <img class="img-fluid w-50 h-50 rounded-circle " src="<%=mns[0].img%>" alt="" />
                                   </div>
                                   <div class="team_name">
-                                    <h4 class="chc" ><strong><%=mnsMembers[0].name%></strong></h4>
-                                    <p class="chc"><strong><%=mnsMembers[0].desg%></strong></p>
+                                    <h4 class="chc" ><strong><%=mns[0].name%></strong></h4>
+                                    <p class="chc"><strong><%=mns[0].deg%></strong></p>
                                     <p class="mt-20 chc">
                                       <strong>
-                                        <%=mnsMembers[0].desc%>
+                                        <%=mns[0].desp%>
                                       </strong>
                                     </p>
                                   </div>
                                 </div>
                               </div>
 
-                              <% for(var i=1; i<mnsMembers.length; i++) {%>
+                              <% for(var i=1; i<mns.length; i++) {%>
 
                                   <div class="carousel-item">
                                     <div class="team_item">
                                       <div class="team_img">
-                                        <img class="img-fluid rounded-circle" src="/images/members/<%=mnsMembers[i].photo%>" alt="" />
+                                        <img class="img-fluid w-50 h-50 rounded-circle" src="<%=mns[i].img%>" alt="" />
                                       </div>
                                       <div class="team_name">
-                                        <h4 class="chc"><strong><%=mnsMembers[i].name%></strong></h4>
-                                        <p class="chc"><strong><%=mnsMembers[i].desg%></strong></p>
+                                        <h4 class="chc"><strong><%=mns[i].name%></strong></h4>
+                                        <p class="chc"><strong><%=mns[i].deg%></strong></p>
                                         <p class="mt-20 chc">
                                           <strong>
-                                            <%=mnsMembers[i].desc%>
+                                            <%=mns[i].desp%>
                                           </strong>
                                           </p>
                                       </div>

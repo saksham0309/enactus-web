@@ -5,6 +5,9 @@ var aboutRoute = require('./aboutus');
 var eventRoute = require('./event');
 var projectRoute = require('./project');
 const bodyParser = require("body-parser");
+var mysql = require('mysql');
+
+
 var app = express();
 
 // =================
