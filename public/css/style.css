@@ -30,11 +30,14 @@ Table of Content:
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 body {
+  background-image: url(/images/background/bg.jpg);
   line-height: 25px;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  color: #777777; }
+  color: #777777; 
+  overflow-x: hidden;
+}
 
 h1,
 h2,
@@ -162,7 +165,14 @@ button:focus {
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+.logo_h>img{
+  height: 120px !important;
+  width: 180px !important;
+}
 .header_area {
+  border-bottom: 5px solid;
+  border-bottom-color: #ffc500;
+  background-color: #ffffffe0 !important;
   position: absolute;
   width: 100%;
   top: 0;
@@ -179,11 +189,11 @@ button:focus {
     .header_area .navbar .nav .nav-item {
       margin-right: 45px; }
       .header_area .navbar .nav .nav-item .nav-link {
+        color: #777777;
         font-size: 13px;
-        font-weight: 500;
+        font-weight: 800;
         line-height: 80px;
         text-transform: uppercase;
-        color: #ffffff;
         padding: 0px;
         display: inline-block; }
         .header_area .navbar .nav .nav-item .nav-link:after {
@@ -257,6 +267,7 @@ button:focus {
       .header_area .navbar .nav .nav-item:last-child {
         margin-right: 0px; }
   .header_area.navbar_fixed .main_menu {
+    border-bottom: solid 5px #fec300;
     position: fixed;
     width: 100%;
     top: -70px;
@@ -274,18 +285,41 @@ button:focus {
 /*----------------------------------------------------*/
 /* Home Banner Area css
 ============================================================================================ */
+/*
 .home_banner_area {
   z-index: 1;
   min-height: 900px;
   display: flex;
   background: linear-gradient(rgba(3, 1, 10, 0.5), rgba(3, 1, 10, 0.5)), url(../img/banner/home-banner.jpg) no-repeat scroll center center;
-  background-size: cover; }
+  background-size: cover;
+
+}*/
+[data-slides]  {
+  z-index: 1;
+ min-height: 700px;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ background: url(../img/banner/ban11.jpg) no-repeat scroll center center;
+ background-size: cover;
+ transition: background-image 1s ease-in;
+
+}
+
+
+
+
+
   .home_banner_area .banner_inner {
     width: 100%;
-    display: flex; }
+    height: 100vh;
+    display: flex;
+     }
     .home_banner_area .banner_inner .container {
       vertical-align: middle;
-      align-self: center; }
+      align-self: center; 
+    
+    }
     .home_banner_area .banner_inner .banner_content {
       color: #fff;
       vertical-align: middle;
@@ -294,7 +328,8 @@ button:focus {
       .home_banner_area .banner_inner .banner_content .upper_text {
         font-size: 50px;
         text-transform: uppercase;
-        color: #fdbb00; }
+        color: #fdbb00; 
+      }
         @media (max-width: 767px) {
           .home_banner_area .banner_inner .banner_content .upper_text {
             font-size: 35px; } }
@@ -562,8 +597,38 @@ button:focus {
   .event-details-area .condition-right li:nth-child(3)::before {
     content: "\f124"; }
 
+
+    .proj-heading{
+      font-size: 40px;
+      font-weight: 500;
+    }
 /* recent Events css End
 =========================================================================================== */
+
+/* UI tiny Image  
+=========================================================================================== */
+
+.cen{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 5px !important;
+}
+.brick{
+  margin: auto;
+  padding: 1px;
+  background-image: url(/images/background/bg3.jpg);
+  background-size: contain;
+  border-radius: 50px;
+}
+.bri{
+  background: #ffffff52 !important;
+  margin: 10px !important;
+  border-radius: 30px !important;
+}
+
+/* UI tiny Image End
+=========================================================================================== */
+
 /* Team Area css
 ============================================================================================ */
 .team_area {
@@ -623,11 +688,15 @@ button:focus {
 /* Start CTA Area css
 ============================================================================================ */
 .cta-area {
-  background: #60bc0f;
+  background: url("/images/background/bg2.jpg");
   background-size: cover;
+  border-top: solid 5px #fec300;
+  border-bottom: solid 5px #fec300;
   text-align: center;
   color: #fff;
-  z-index: 1; }
+  z-index: 1; 
+  text-shadow: 9px 9px 16px black;
+}
   .cta-area.overlay:after {
     background: #000;
     opacity: .5; }
@@ -686,14 +755,17 @@ button:focus {
 /* Start Subscribe Area css
 ============================================================================================ */
 .subscribe_area {
-  background: url(../img/subscribe-bg.jpg) no-repeat center;
+  background: url(/images/background/bg2.jpg);
   padding: 42px 40px;
   position: relative;
   margin-bottom: -67px;
-  z-index: 9999; }
+  z-index: 9999;
+  text-shadow: 0 0 7px black;
+  box-shadow: 0 0 14px black;
+}
   @media (max-width: 991px) {
     .subscribe_area {
-      background: #60bc0f;
+      background: url(/images/background/bg2.jpg);
       margin-bottom: 70px;
       padding: 50px 40px; } }
   @media (max-width: 767px) {
@@ -2753,5 +2825,8 @@ h6 {
       opacity: 1; }
 
 /*---------------------------------------------------- */
+
+
+
 
 /*# sourceMappingURL=style.css.map */

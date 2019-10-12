@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<title>Events</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      	<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400%7CSource+Sans+Pro:700" rel="stylesheet">
+
+
+
+
+
+
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/vendors/linericon/style.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/responsive.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="/css2/style.css"/>
+
+
+
+    </head>
+	<body>
+			<% include frontpart/navbar %>
+			<section class="home_banner_area"  data-slides='["/img/banner/ban11.jpg","/img/banner/ban12.jpg","/img/banner/ban13.jpg"]'>
+				<div class="banner_inner">
+					<div class="container">
+						<div class="banner_content">
+
+							<h2>Projects</h2>
+
+							<a class="primary_btn mr-20" href="#">Donate Now</a>
+							<a class="primary_btn yellow_btn text-white" href="#">See Causes</a>
+						</div>
+					</div>
+				</div>
+			</section>
+	<!---ITS FROM CHARITY TEMPLATE FOR CSS AND JS CHECK CSS2 AND JS2 FILES-->
+<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- MAIN -->
+					<main id="main" class="col-md-9">
+						<!-- article -->
+						<div class="article event-details">
+								<div class="article-content">
+										<!-- article title -->
+										<h2 class="article-title"><%= d.name %></h2>
+										<!-- /article title -->
+
+										<!-- article meta -->
+										<ul class="article-meta">
+										<li> <%= d.date %></li>
+
+
+										</ul>
+										<!-- /article meta -->
+
+							<!-- article img -->
+							<div class="article-img">
+								<img src="<%= d.url %>" alt="">
+							</div><br><br>
+							<!-- article img -->
+
+							<!-- article content -->
+
+								<p> <%= d.desc1 %></p>
+								<p> <%= d.desc2 %></p>
+						<p> <%= d.desc3 %></p>
+						<p> <%= d.desc4 %></p>
+						</div>
+							<!-- /article content -->
+
+							<!-- event-meta -->
+							<ul class="event-meta">
+								<li><h4>Event Details</h4></li>
+								<li><i class="fa fa-clock-o"></i><strong>Date:</strong> <%= d.date %> | 8:00AM - 06:00PM</li>
+								<li><i class="fa fa-map-marker"></i><strong>Location:</strong> Chennai</li>
+
+							</ul>
+							<!-- /event-meta -->
+
+							<!-- article tags share -->
+							<div class="article-tags-share">
+								<!-- article tags -->
+								<ul class="tags">
+									<li>TAGS:</li>
+
+									<li><a href="#">Donation</a></li>
+								</ul>
+								<!-- /article tags -->
+
+								<!-- article share -->
+								<ul class="share">
+									<li>SHARE:</li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+								</ul>
+								<!-- /article share -->
+							</div>
+							<!-- /article tags share -->
+
+							<!-- article reply form -->
+							<div class="article-reply">
+								<h3>Leave a reply</h3>
+								<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+								<form>
+									<div class="row">
+										<div class="col-md-4">
+											<div class="form-group">
+												<input class="input" placeholder="Name" type="text">
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="form-group">
+												<input class="input" placeholder="Email" type="email">
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="form-group">
+												<input class="input" placeholder="Website" type="text">
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<textarea class="input" placeholder="Message"></textarea>
+											</div>
+											<button class="primary-button">Submit</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<!-- /article reply form -->
+						</div>
+						<!-- /article -->
+					</main>
+					<!-- /MAIN -->
+
+					<!-- ASIDE -->
+					<aside id="aside" class="col-md-3">
+
+
+						
+						<!-- causes widget -->
+						<div class="widget">
+							<h3 class="widget-title">Latest Projects</h3>
+
+							<!-- single causes -->
+							<div class="widget-causes">
+								<a href="/projects/2">
+									<div class="widget-img">
+										<img src="/images/portfolio/project_logos/Nari.jpeg" alt="">
+									</div>
+									<div class="widget-content">
+										Project Naari
+
+									</div>
+								</a>
+
+							</div>
+							<!-- /single causes -->
+
+							<!-- single causes -->
+							<div class="widget-causes">
+								<a href="/projects/0">
+									<div class="widget-img">
+										<img src="/images/portfolio/project_logos/malar.jpeg" alt="">
+									</div>
+									<div class="widget-content">
+										Project Malar
+
+									</div>
+								</a>
+
+							</div>
+							<!-- /single causes -->
+
+							<!-- single causes -->
+							<div class="widget-causes">
+								<a href="/projects/1">
+									<div class="widget-img">
+										<img src="/images/portfolio/project_logos/ujjwal.jpeg" alt="">
+									</div>
+									<div class="widget-content">
+										Project X
+
+									</div>
+								</a>
+
+							</div>
+							<!-- /single causes -->
+						</div>
+						<!-- causes widget -->
+					</aside>
+					<!-- /ASIDE -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+		<script src="/js/jquery-3.2.1.min.js"></script>
+	<script src="/js/popper.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/stellar.js"></script>
+	<script src="/vendors/lightbox/simpleLightbox.min.js"></script>
+	<script src="/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="/js/jquery.ajaxchimp.min.js"></script>
+	<script src="/js/mail-script.js"></script>
+	<script src="/js/countdown.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="/js/gmaps.min.js"></script>
+	<script src="/js/theme.js"></script>
+		<% include frontpart/footer %>
