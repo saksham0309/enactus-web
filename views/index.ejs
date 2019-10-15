@@ -25,37 +25,26 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
     <style>
-      .p99 {
-        background: red;
-        border: none;
-        width: 200px;
-        height: 60px;
-        border-radius: 15px;
-        color: snow; // Vanilla HTML color name
-        cursor: pointer;
-
-        position: fixed;
-        right: 0;
-        padding: 0.65em 2em;
-        // Required for pseudo-element positioning
-        text-transform: uppercase;
-
-        -webkit-animation-name: greenPulse;
-        -webkit-animation-duration: 2s;
-        -webkit-animation-iteration-count: infinite;
+     .glow {
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
       }
-      @-webkit-keyframes greenPulse {
+
+      @-webkit-keyframes glow {
         from {
-          background-color: red;
-          -webkit-box-shadow: 0 0 9px #333;
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+            0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073,
+            0 0 70px #e60073;
         }
-        50% {
-          background-color: red;
-          -webkit-box-shadow: 0 0 18px #91bd09;
-        }
+
         to {
-          background-color: red;
-          -webkit-box-shadow: 0 0 9px #333;
+          text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+            0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6,
+            0 0 80px #ff4da6;
         }
       }
     </style>
@@ -78,7 +67,9 @@
               two itself upon you'll dominion waters man second good you they're
               divided upon winged were replenish night
             </p>
-	    <a class="p99" href="abstract.html">Rangoli Registration!</a>
+	    <a class="glow" href="">Rangoli Registration!</a>
+
+            <br /><br />
             <a class="primary_btn mr-20" href="#">Donate Now</a>
             <a class="primary_btn yellow_btn text-white" href="#">See Causes</a>
           </div>
