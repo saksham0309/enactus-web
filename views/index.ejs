@@ -24,6 +24,41 @@
 
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
+    <style>
+      .p99 {
+        background: red;
+        border: none;
+        width: 200px;
+        height: 60px;
+        border-radius: 15px;
+        color: snow; // Vanilla HTML color name
+        cursor: pointer;
+
+        position: fixed;
+        right: 0;
+        padding: 0.65em 2em;
+        // Required for pseudo-element positioning
+        text-transform: uppercase;
+
+        -webkit-animation-name: greenPulse;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+      }
+      @-webkit-keyframes greenPulse {
+        from {
+          background-color: red;
+          -webkit-box-shadow: 0 0 9px #333;
+        }
+        50% {
+          background-color: red;
+          -webkit-box-shadow: 0 0 18px #91bd09;
+        }
+        to {
+          background-color: red;
+          -webkit-box-shadow: 0 0 9px #333;
+        }
+      }
+    </style>
   </head>
   <body>
     <% include frontpart/navbar %>
@@ -43,6 +78,7 @@
               two itself upon you'll dominion waters man second good you they're
               divided upon winged were replenish night
             </p>
+	    <a class="p99" href="abstract.html">Rangoli Registration!</a>
             <a class="primary_btn mr-20" href="#">Donate Now</a>
             <a class="primary_btn yellow_btn text-white" href="#">See Causes</a>
           </div>
