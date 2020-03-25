@@ -351,15 +351,15 @@ var mnsMembers = [{
 }];
 
 router.get("/about",async function (req, res) {
-    const response1=await fetch('https://keplerian-bypass.000webhostapp.com/admin/fetch_adv.php')
+    const response1=await fetch('http://enactusvitc-org.stackstaging.com/admin/fetch_adv.php')
     const adv=await response1.json();
-    const response2=await fetch('https://keplerian-bypass.000webhostapp.com/admin/fetch_cre.php')
+    const response2=await fetch('http://enactusvitc-org.stackstaging.com/admin/fetch_cre.php')
     const cre=await response2.json();
-    const response3=await fetch('https://keplerian-bypass.000webhostapp.com/admin/fetch_fin.php')
+    const response3=await fetch('http://enactusvitc-org.stackstaging.com/admin/fetch_fin.php')
     const fin=await response3.json();
-    const response4=await fetch('https://keplerian-bypass.000webhostapp.com/admin/fetch_hr.php')
+    const response4=await fetch('http://enactusvitc-org.stackstaging.com/admin/fetch_hr.php')
     const hr=await response4.json();
-    const response5=await fetch('https://keplerian-bypass.000webhostapp.com/admin/fetch_mns.php')
+    const response5=await fetch('http://enactusvitc-org.stackstaging.com/admin/fetch_mns.php')
     const mns=await response5.json();
 
          //console.log(r1);
